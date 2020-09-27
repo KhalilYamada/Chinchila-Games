@@ -23,17 +23,18 @@ public class WasClicked : MonoBehaviour
         {
             lineScript.SetNewPoint();
             hasEntered = true;
-            lineManagerScript.tilesList.Add(esse);
+            lineScript.tilesList.Add(esse);
             canRemove = true;
-            lineManagerScript.AtualizaContagem();
+            lineScript.AtualizaContagem();
+
         }
         else if(lineScript.lineRend.positionCount > 1 && canRemove == true)
         {
             lineScript.lineRend.positionCount = lineScript.lineRend.positionCount - 1;
             lineScript.qualVertex = lineScript.qualVertex - 1;
             hasEntered = false;
-            lineManagerScript.tilesList.Remove(esse);
-            lineManagerScript.AtualizaContagemRemove();
+            lineScript.tilesList.Remove(esse);
+            lineScript.AtualizaContagemRemove();
         }
     }
 }

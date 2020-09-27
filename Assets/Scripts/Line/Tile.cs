@@ -7,13 +7,14 @@ public class Tile : MonoBehaviour
     [Header("Permições")]
     public bool isClose = false; //Se eu posso entrar nesse tile, ou seja, está próximo o suficiente, por padrão é falso pois "nenhum bloco está perto no início"
     public bool isOcupied; //Se esse tile já está ocupado por alguma das linhas
+    public bool isLastCube; //Se esse tile for o último
 
     [Header("Todos os cubos")]
-    public Tile[] cubes;
+    public Tile[] tilesList;
 
 
     [Header("Qual Linha")]
-    static int qualLinha;
+    public int linhaNoTile;
 
 
     [Header("Scripts")] 
@@ -35,6 +36,10 @@ public class Tile : MonoBehaviour
         {
             Entrou();
         }
+        else if (LineDrawer.thisLine == linhaNoTile)
+        {
+
+        }
     }
 
 
@@ -45,18 +50,28 @@ public class Tile : MonoBehaviour
 
         CleanMoves();
 
-        lineScript[qualLinha].SetNewPoint();
-        lineScript[qualLinha].tilesList.Add(thisTile); //estamos adaptando ainda, então está dando erro pela dessassociação
-        lineScript[qualLinha].AtualizaContagem();
-        lineScript[qualLinha].CanMove();
+
+        linhaNoTile = LineDrawer.thisLine;
+
+        
+
+        lineScript[LineDrawer.thisLine].SetNewPoint();
+        lineScript[LineDrawer.thisLine].tilesList.Add(thisTile); //estamos adaptando ainda, então está dando erro pela dessassociação        
+        lineScript[LineDrawer.thisLine].CanMove();
+    }
+
+
+    private void Saiu()
+    {
+
     }
 
 
     private void CleanMoves()
     {
-        for (int i = 0; i < cubes.Length; i++)
+        for (int i = 0; i < tilesList.Length; i++)
         {
-            cubes[i].isClose = false;
+            tilesList[i].isClose = false;
         }
-    }//Quando mudar de linha, executar novamente o código "CanMove()"
+    }//Quando mudar de linha (ou seja, mudar da linha "prova adaptada" para a "mudar aluno de sala"), executar novamente o código "CanMove()"
 }

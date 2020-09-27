@@ -26,7 +26,7 @@ public class WasClicked : MonoBehaviour
 
             lineScript.SetNewPoint();
             //lineScript.tilesList.Add(esse);
-            lineScript.AtualizaContagem();
+            //lineScript.AtualizaContagem();
 
         }
         else if(lineScript.lineRend.positionCount > 1 && canRemove == true)
@@ -36,7 +36,7 @@ public class WasClicked : MonoBehaviour
             lineScript.lineRend.positionCount = lineScript.lineRend.positionCount - 1;
             lineScript.qualVertex = lineScript.qualVertex - 1;
             //lineScript.tilesList.Remove(esse);
-            lineScript.AtualizaContagemRemove();
+            //lineScript.AtualizaContagemRemove();
         }
     }
 }

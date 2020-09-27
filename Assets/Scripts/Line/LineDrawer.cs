@@ -16,16 +16,17 @@ public class LineDrawer : MonoBehaviour
     public int qualVertex = 1; //Acho que precisa mudar o nome, diz em qual dos lugares a posição vai ser associada
 
     [SerializeField]
-    public LineManager lineManagerScript;
-
-    [SerializeField]
     public List<Tile> tilesList = new List<Tile>();
 
 
+    public static int thisLine; //Serve para identificarmos qual das linhas estamos mexendo no momento
 
 
-
-
+    /// <summary>
+    /// PRECISO CRIAR O CÓDIGO QUE VAI SER UTILIZADO PARA TROCAR ENTRE AS LINHAS, OU SEJA, SE EU CLICAR
+    /// EM ALGUM BOTÃO OU SLA ELE VAI DEFINIR O "THIS LINE" COMO O NÚMERO DESSA LINHA (NÚMERO QUE SERÁ
+    /// ASSOCIADO NO INSPECTOR)
+    /// </summary>
 
     void Start()
     {
@@ -42,27 +43,12 @@ public class LineDrawer : MonoBehaviour
         qualVertex++;
     }
 
-    public void AtualizaContagem()
-    {
-        for (int i = 0; i < tilesList.Count - 1; i++)
-        {
-            //tilesList[i].canRemove = false;
-        }
-    }
-
-    public void AtualizaContagemRemove()
-    {
-        //tilesList[tilesList.Count - 1].canRemove = true;
-    }
-
-
     public void CanMove()
     { 
         RaycastHit2D[] hitU = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.up), 2);
         RaycastHit2D[] hitD = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.down), 2);
         RaycastHit2D[] hitL = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.left), 2);
         RaycastHit2D[] hitR = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.right), 2);
-
 
 
         for (int i = 1; i < hitU.Length; i++)

@@ -21,19 +21,21 @@ public class WasClicked : MonoBehaviour
     {
         if (!hasEntered)
         {
-            lineScript.SetNewPoint();
             hasEntered = true;
-            lineScript.tilesList.Add(esse);
             canRemove = true;
+
+            lineScript.SetNewPoint();
+            //lineScript.tilesList.Add(esse);
             lineScript.AtualizaContagem();
 
         }
         else if(lineScript.lineRend.positionCount > 1 && canRemove == true)
         {
+            hasEntered = false;
+
             lineScript.lineRend.positionCount = lineScript.lineRend.positionCount - 1;
             lineScript.qualVertex = lineScript.qualVertex - 1;
-            hasEntered = false;
-            lineScript.tilesList.Remove(esse);
+            //lineScript.tilesList.Remove(esse);
             lineScript.AtualizaContagemRemove();
         }
     }

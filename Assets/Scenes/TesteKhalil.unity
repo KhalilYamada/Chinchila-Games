@@ -995,7 +995,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.4117647}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1290,6 +1290,7 @@ MonoBehaviour:
   lineRend: {fileID: 0}
   qualVertex: 0
   lineManagerScript: {fileID: 492950120}
+  tilesList: []
 --- !u!120 &346333431
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1330,7 +1331,8 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: 4, y: 2, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

@@ -13,33 +13,25 @@ public class LineDrawer : MonoBehaviour
     private Vector2 mousePos; //Associa a posição do mouse
 
     [HideInInspector]
-    public int qualVertex; //Acho que precisa mudar o nome, diz em qual dos lugares a posição vai ser associada
+    public int qualVertex = 1; //Acho que precisa mudar o nome, diz em qual dos lugares a posição vai ser associada
 
     [SerializeField]
     public LineManager lineManagerScript;
 
     [SerializeField]
-    public List<WasClicked> tilesList = new List<WasClicked>();
+    public List<Tile> tilesList = new List<Tile>();
 
 
 
-    
+
 
 
 
     void Start()
     {
         lineRend = GetComponent<LineRenderer>();
-        lineRend.positionCount = 0;
-
+        lineRend.positionCount = 1;
     }
-
-
-    private void Update()
-    {
-        CanMove();
-    }
-
 
     public void SetNewPoint()
     {
@@ -54,48 +46,54 @@ public class LineDrawer : MonoBehaviour
     {
         for (int i = 0; i < tilesList.Count - 1; i++)
         {
-            tilesList[i].canRemove = false;
+            //tilesList[i].canRemove = false;
         }
     }
 
     public void AtualizaContagemRemove()
     {
-        tilesList[tilesList.Count - 1].canRemove = true;
+        //tilesList[tilesList.Count - 1].canRemove = true;
     }
 
 
     public void CanMove()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
+    { 
+        RaycastHit2D[] hitU = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.up), 2);
+        RaycastHit2D[] hitD = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.down), 2);
+        RaycastHit2D[] hitL = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.left), 2);
+        RaycastHit2D[] hitR = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.right), 2);
+
+
+
+        for (int i = 1; i < hitU.Length; i++)
         {
+            //hitU[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
+            //está como sprite rederer somente para verificar se está colidindo ou não
 
-            RaycastHit2D[] hitU = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.up), 2);
-            RaycastHit2D[] hitD = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.down), 2);
-            RaycastHit2D[] hitL = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.left), 2);
-            RaycastHit2D[] hitR = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.right), 2);
+            hitU[i].collider.GetComponent<Tile>().isClose = true;
+        }
+        for (int i = 1; i < hitD.Length; i++)
+        {
+            //hitD[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
+            //está como sprite rederer somente para verificar se está colidindo ou não
 
+            hitD[i].collider.GetComponent<Tile>().isClose = true;
+        }
 
+        for (int i = 1; i < hitL.Length; i++)
+        {
+            //hitL[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
+            //está como sprite rederer somente para verificar se está colidindo ou não
 
-            for (int i = 1; i < hitU.Length; i++)
-            {
-                hitU[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
+            hitL[i].collider.GetComponent<Tile>().isClose = true;
+        }
 
+        for (int i = 1; i < hitR.Length; i++)
+        {
+            //hitR[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
+            //está como sprite rederer somente para verificar se está colidindo ou não
 
-            for (int i = 1; i < hitD.Length; i++)
-            {
-                hitD[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-
-            for (int i = 1; i < hitL.Length; i++)
-            {
-                hitL[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-
-            for (int i = 1; i < hitR.Length; i++)
-            {
-                hitR[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
+            hitR[i].collider.GetComponent<Tile>().isClose = true;
         }
     }
 }

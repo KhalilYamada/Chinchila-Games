@@ -23,9 +23,11 @@ public class LineDrawer : MonoBehaviour
 
 
     /// <summary>
+    /// 
     /// PRECISO CRIAR O CÓDIGO QUE VAI SER UTILIZADO PARA TROCAR ENTRE AS LINHAS, OU SEJA, SE EU CLICAR
     /// EM ALGUM BOTÃO OU SLA ELE VAI DEFINIR O "THIS LINE" COMO O NÚMERO DESSA LINHA (NÚMERO QUE SERÁ
     /// ASSOCIADO NO INSPECTOR)
+    /// 
     /// </summary>
 
     void Start()

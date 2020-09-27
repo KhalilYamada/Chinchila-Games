@@ -8,6 +8,9 @@ public class Tile : MonoBehaviour
     public bool isClose = false; //Se eu posso entrar nesse tile, ou seja, está próximo o suficiente, por padrão é falso pois "nenhum bloco está perto no início"
     public bool isOcupied; //Se esse tile já está ocupado por alguma das linhas
 
+    [Header("Todos os cubos")]
+    public Tile[] cubes;
+
 
     [Header("Qual Linha")]
     static int qualLinha;
@@ -39,7 +42,9 @@ public class Tile : MonoBehaviour
     private void Entrou()
     {
         isOcupied = true;
-        isClose = false;
+
+        CleanMoves();
+
         lineScript[qualLinha].SetNewPoint();
         lineScript[qualLinha].tilesList.Add(thisTile); //estamos adaptando ainda, então está dando erro pela dessassociação
         lineScript[qualLinha].AtualizaContagem();
@@ -49,6 +54,9 @@ public class Tile : MonoBehaviour
 
     private void CleanMoves()
     {
-
-    }
+        for (int i = 0; i < cubes.Length; i++)
+        {
+            cubes[i].isClose = false;
+        }
+    }//Quando mudar de linha, executar novamente o código "CanMove()"
 }

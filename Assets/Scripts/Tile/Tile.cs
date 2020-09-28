@@ -5,6 +5,15 @@ using System.Linq;
 
 public class Tile : MonoBehaviour
 {
+
+    /// <summary>
+    /// 
+    /// Para que um tile seja considerado "Inicial" ele precisa que a boolean seja marcada no inspector
+    /// e também seja ativada a boolean "isOcupied", adicionei no void start, mas para garantir
+    /// acionar no inspector também
+    /// 
+    /// </summary>
+
     [Header("Permições")]
     public bool isClose = false; //Se eu posso entrar nesse tile, ou seja, está próximo o suficiente, por padrão é falso pois "nenhum bloco está perto no início"
     public bool isOcupied; //Se esse tile já está ocupado por alguma das linhas
@@ -33,6 +42,9 @@ public class Tile : MonoBehaviour
         thisTile = GetComponent<Tile>();
         if (isInitialTile == true)
         {
+            isOcupied = true;
+            isClose = true;
+
             lineScript[qualLinhaTileInicial].SetInitialPoint(transform);
             lineScript[qualLinhaTileInicial].tilesList.Add(thisTile);
             lineScript[qualLinhaTileInicial].CanMove();

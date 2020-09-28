@@ -23,6 +23,8 @@ public class LineDrawer : MonoBehaviour
     public static int thisLine; //Serve para identificarmos qual das linhas estamos mexendo no momento
 
 
+    public int stressColected;
+
     /// <summary>
     /// 
     /// PRECISO CRIAR O CÓDIGO QUE VAI SER UTILIZADO PARA TROCAR ENTRE AS LINHAS, OU SEJA, SE EU CLICAR

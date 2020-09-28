@@ -174,6 +174,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -335,6 +336,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 1
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -496,6 +498,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -657,6 +660,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -818,6 +822,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -918,7 +923,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 0.9669811, b: 0.9669811, a: 0.0627451}
+  m_Color: {r: 0.94023365, g: 1, b: 0.033018887, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -979,6 +984,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1140,6 +1146,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1240,7 +1247,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 0.94023365, g: 1, b: 0.033018887, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1283,6 +1290,7 @@ MonoBehaviour:
   lineRend: {fileID: 0}
   qualVertex: 0
   lineTilesList: []
+  stressColected: 0
 --- !u!120 &346333431
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1445,6 +1453,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1689,6 +1698,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1850,6 +1860,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 1
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2011,6 +2022,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 1
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2172,6 +2184,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2315,6 +2328,7 @@ MonoBehaviour:
   lineRend: {fileID: 0}
   qualVertex: 0
   lineTilesList: []
+  stressColected: 0
 --- !u!120 &934796491
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2477,6 +2491,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2577,7 +2592,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 0.94023365, g: 1, b: 0.033018887, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2638,6 +2653,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2844,6 +2860,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3005,6 +3022,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3198,6 +3216,7 @@ MonoBehaviour:
   isFirstTile: 1
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3359,6 +3378,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3520,6 +3540,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3681,6 +3702,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3897,6 +3919,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4058,6 +4081,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4158,7 +4182,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 0.94023365, g: 1, b: 0.033018887, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4219,6 +4243,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4342,7 +4367,7 @@ GameObject:
   - component: {fileID: 1957397797}
   - component: {fileID: 1957397796}
   m_Layer: 0
-  m_Name: Square (12)
+  m_Name: Square (12) Central Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4378,8 +4403,9 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
-  isCentralTile: 0
+  isCentralTile: 1
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4480,7 +4506,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 0, g: 0.4384992, b: 1, a: 0.98039216}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4541,6 +4567,7 @@ MonoBehaviour:
   isFirstTile: 0
   isCentralTile: 0
   isStressed: 0
+  isWall: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}

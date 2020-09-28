@@ -26,6 +26,7 @@ public class Tile : MonoBehaviour
     public bool isFirstTile;
     public bool isCentralTile;
     public bool isStressed; //Verifica se o tile é considerado como estímulo negativo para ser bloqueado
+    public bool isWall;
 
 
     [Header("Todos os tiles")]
@@ -78,7 +79,11 @@ public class Tile : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if ((isClose == true && isOcupied == false) && isInitialTile == false)
+        if (isWall)
+        {
+            return;
+        }
+        else if ((isClose == true && isOcupied == false) && isInitialTile == false)
         {
             Entrou();
         }
@@ -102,11 +107,19 @@ public class Tile : MonoBehaviour
 
         lineScript[LineDrawer.thisLine].SetNewPoint();
         lineScript[LineDrawer.thisLine].lineTilesList.Add(thisTile);
-        lineScript[LineDrawer.thisLine].CanMove();
+        if (!isCentralTile)
+        {
+            lineScript[LineDrawer.thisLine].CanMove();
+        }
+        else
+        {
+            faseScript.stressLevel += lineScript[LineDrawer.thisLine].stressColected;
+            isOcupied = false;
+        }
 
         if(isStressed == true)
         {
-            faseScript.stressSubtracter++;
+            lineScript[LineDrawer.thisLine].stressColected++;
         }
     }
 
@@ -132,7 +145,11 @@ public class Tile : MonoBehaviour
         }
         if (isStressed == true)
         {
-            faseScript.stressSubtracter--;
+            lineScript[LineDrawer.thisLine].stressColected--;
+        }
+        else
+        {
+            faseScript.stressLevel += lineScript[LineDrawer.thisLine].stressColected;
         }
         lineScript[LineDrawer.thisLine].CanMove();
     }
@@ -149,6 +166,12 @@ public class Tile : MonoBehaviour
             lineScript[LineDrawer.thisLine].lineTilesList[lineScript[LineDrawer.thisLine].lineTilesList.Count() - 2].isLastTile = true;
         }
         lineScript[LineDrawer.thisLine].CanMove();
+    }
+
+
+    public void InputFinal()
+    {
+
     }
 
 

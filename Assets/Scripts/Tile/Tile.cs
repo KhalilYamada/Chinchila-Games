@@ -20,7 +20,12 @@ public class Tile : MonoBehaviour
     public bool isClose = false; //Se eu posso entrar nesse tile, ou seja, está próximo o suficiente, por padrão é falso pois "nenhum bloco está perto no início"
     public bool isOcupied; //Se esse tile já está ocupado por alguma das linhas
     public bool isLastTile; //Se esse tile for o último
+
+
+    [Header("Tiles especiais")]
     public bool isFirstTile;
+    public bool isCentralTile;
+    public bool isStressed; //Verifica se o tile é considerado como estímulo negativo para ser bloqueado
 
 
     [Header("Todos os tiles")]
@@ -33,10 +38,11 @@ public class Tile : MonoBehaviour
     public bool isInitialTile;
 
 
+
     [Header("Scripts")] 
     public LineDrawer[] lineScript;
     private Tile thisTile;
-
+    public FaseManager faseScript;
 
 
     private void Start()
@@ -57,6 +63,8 @@ public class Tile : MonoBehaviour
             }
         }
     }
+
+
 
     private void OnMouseDown()
     {
@@ -93,8 +101,13 @@ public class Tile : MonoBehaviour
         lineScript[LineDrawer.thisLine].lineTilesList.Last().isLastTile = true;
 
         lineScript[LineDrawer.thisLine].SetNewPoint();
-        lineScript[LineDrawer.thisLine].lineTilesList.Add(thisTile);  
+        lineScript[LineDrawer.thisLine].lineTilesList.Add(thisTile);
         lineScript[LineDrawer.thisLine].CanMove();
+
+        if(isStressed == true)
+        {
+            faseScript.stressSubtracter++;
+        }
     }
 
 
@@ -117,7 +130,10 @@ public class Tile : MonoBehaviour
         {
             lineScript[LineDrawer.thisLine].lineTilesList[lineScript[LineDrawer.thisLine].lineTilesList.Count() - 2].isLastTile = true;
         }
-
+        if (isStressed == true)
+        {
+            faseScript.stressSubtracter--;
+        }
         lineScript[LineDrawer.thisLine].CanMove();
     }
 

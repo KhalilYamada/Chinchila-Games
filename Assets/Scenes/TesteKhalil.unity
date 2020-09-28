@@ -172,6 +172,8 @@ MonoBehaviour:
   isOcupied: 1
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -204,6 +206,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &16148248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -294,7 +297,7 @@ GameObject:
   - component: {fileID: 56810090}
   - component: {fileID: 56810089}
   m_Layer: 0
-  m_Name: Square (11)
+  m_Name: Square (11) Stressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,6 +333,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -362,6 +367,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &56810090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -429,7 +435,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 1, g: 0.2688679, b: 0.2688679, a: 0.50980395}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -488,6 +494,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -520,6 +528,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &133534638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -646,6 +655,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -678,6 +689,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &169449630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -804,6 +816,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -836,6 +850,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &226557114
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -962,6 +977,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -994,6 +1011,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &248739767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1120,6 +1138,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1152,6 +1172,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &314009532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1422,6 +1443,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1454,6 +1477,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &514625702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1663,6 +1687,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1695,6 +1721,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &532196836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1785,7 +1812,7 @@ GameObject:
   - component: {fileID: 597535730}
   - component: {fileID: 597535729}
   m_Layer: 0
-  m_Name: Square (10)
+  m_Name: Square (10) Stressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1821,6 +1848,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1853,6 +1882,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &597535730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1920,7 +1950,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 1, g: 0.2688679, b: 0.2688679, a: 0.50980395}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1943,7 +1973,7 @@ GameObject:
   - component: {fileID: 606924073}
   - component: {fileID: 606924072}
   m_Layer: 0
-  m_Name: Square (15)
+  m_Name: Square (15) Stressed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1979,6 +2009,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2011,6 +2043,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &606924073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2078,7 +2111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: efa1735bca62a3e4d898464009daef07, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 1, g: 0.2688679, b: 0.2688679, a: 0.50980395}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2137,6 +2170,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2169,6 +2204,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &685967392
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2439,6 +2475,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2471,6 +2509,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &974678140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2597,6 +2636,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2629,6 +2670,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1018120344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2706,6 +2748,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1068042581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1068042583}
+  - component: {fileID: 1068042582}
+  m_Layer: 0
+  m_Name: FaseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1068042582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068042581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f3b2a0ba8963e40a57893eb1da43c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stressLevel: 0
+  stressSubtracter: 0
+--- !u!4 &1068042583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068042581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123227587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2842,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2787,6 +2876,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1123227590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2913,6 +3003,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2945,6 +3037,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1278123406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3103,6 +3196,8 @@ MonoBehaviour:
   isOcupied: 1
   isLastTile: 0
   isFirstTile: 1
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3135,6 +3230,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1400795557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3261,6 +3357,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3293,6 +3391,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1645762189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3419,6 +3518,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3451,6 +3552,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1774969858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3577,6 +3679,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3609,6 +3713,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1776810040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3790,6 +3895,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3822,6 +3929,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1818441731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3948,6 +4056,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3980,6 +4090,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1922246154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4106,6 +4217,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4138,6 +4251,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1944471238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4264,6 +4378,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4296,6 +4412,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &1957397797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4422,6 +4539,8 @@ MonoBehaviour:
   isOcupied: 0
   isLastTile: 0
   isFirstTile: 0
+  isCentralTile: 0
+  isStressed: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4454,6 +4573,7 @@ MonoBehaviour:
   lineScript:
   - {fileID: 346333430}
   - {fileID: 934796490}
+  faseScript: {fileID: 1068042582}
 --- !u!61 &2026359141
 BoxCollider2D:
   m_ObjectHideFlags: 0

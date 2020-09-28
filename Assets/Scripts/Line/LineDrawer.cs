@@ -17,7 +17,7 @@ public class LineDrawer : MonoBehaviour
     public int qualVertex = 2; //Acho que precisa mudar o nome, diz em qual dos lugares a posição vai ser associada
 
     [SerializeField]
-    public List<Tile> tilesList = new List<Tile>();
+    public List<Tile> lineTilesList = new List<Tile>();
 
 
     public static int thisLine; //Serve para identificarmos qual das linhas estamos mexendo no momento
@@ -57,10 +57,10 @@ public class LineDrawer : MonoBehaviour
 
     public void CanMove() //Verifica e ativa os tiles próximos, permitindo se mover para eles
     { 
-        RaycastHit2D[] hitU = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.up), 2);
-        RaycastHit2D[] hitD = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.down), 2);
-        RaycastHit2D[] hitL = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.left), 2);
-        RaycastHit2D[] hitR = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.right), 2);
+        RaycastHit2D[] hitU = Physics2D.RaycastAll(lineTilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.up), 2);
+        RaycastHit2D[] hitD = Physics2D.RaycastAll(lineTilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.down), 2);
+        RaycastHit2D[] hitL = Physics2D.RaycastAll(lineTilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.left), 2);
+        RaycastHit2D[] hitR = Physics2D.RaycastAll(lineTilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.right), 2);
 
 
         for (int i = 1; i < hitU.Length; i++)

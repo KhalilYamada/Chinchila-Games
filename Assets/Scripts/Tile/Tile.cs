@@ -12,6 +12,8 @@ public class Tile : MonoBehaviour
     /// e também seja ativada a boolean "isOcupied", adicionei no void start, mas para garantir
     /// acionar no inspector também
     /// 
+    /// 
+    /// 
     /// </summary>
 
     [Header("Permições")]
@@ -21,7 +23,7 @@ public class Tile : MonoBehaviour
 
 
     [Header("Todos os tiles")]
-    public Tile[] tilesList;
+    public Tile[] allTilesList;
 
 
     [Header("Qual Linha")]
@@ -47,7 +49,7 @@ public class Tile : MonoBehaviour
             isClose = true;
 
             lineScript[qualLinhaTileInicial].SetInitialPoint(transform);
-            lineScript[qualLinhaTileInicial].tilesList.Add(thisTile);
+            lineScript[qualLinhaTileInicial].lineTilesList.Add(thisTile);
             lineScript[qualLinhaTileInicial].CanMove();
         }
     }
@@ -80,10 +82,10 @@ public class Tile : MonoBehaviour
 
         linhaNoTile = LineDrawer.thisLine; //PRECISO DEFINIR UM VALOR DEFAULT PRA VARIAVEL DE LINHA NO TILE
 
-        lineScript[LineDrawer.thisLine].tilesList.Last().isLastTile = true;
+        lineScript[LineDrawer.thisLine].lineTilesList.Last().isLastTile = true;
 
         lineScript[LineDrawer.thisLine].SetNewPoint();
-        lineScript[LineDrawer.thisLine].tilesList.Add(thisTile);  
+        lineScript[LineDrawer.thisLine].lineTilesList.Add(thisTile);  
         lineScript[LineDrawer.thisLine].CanMove();
     }
 
@@ -92,21 +94,20 @@ public class Tile : MonoBehaviour
     {
         //PRECISO RESETAR O VALOR DEFAULT DA VARIÁVEL DE LINHA NO TILE
 
-        lineScript[LineDrawer.thisLine].tilesList.Last().linhaNoTile = 10;
+        lineScript[LineDrawer.thisLine].lineTilesList.Last().linhaNoTile = 10;
 
-        lineScript[LineDrawer.thisLine].tilesList.Last().isOcupied = false;
+        lineScript[LineDrawer.thisLine].lineTilesList.Last().isOcupied = false;
 
         lineScript[LineDrawer.thisLine].lineRend.positionCount = lineScript[LineDrawer.thisLine].lineRend.positionCount - 1;
         lineScript[LineDrawer.thisLine].qualVertex = lineScript[LineDrawer.thisLine].qualVertex - 1;
-        lineScript[LineDrawer.thisLine].tilesList.Remove(lineScript[LineDrawer.thisLine].tilesList.Last());
+        lineScript[LineDrawer.thisLine].lineTilesList.Remove(lineScript[LineDrawer.thisLine].lineTilesList.Last());
 
         CleanMoves();
 
         if(isInitialTile == false)
         {
-            lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
+            lineScript[LineDrawer.thisLine].lineTilesList[lineScript[LineDrawer.thisLine].lineTilesList.Count() - 2].isLastTile = true;
         }
-
 
         lineScript[LineDrawer.thisLine].CanMove();
     }
@@ -116,19 +117,19 @@ public class Tile : MonoBehaviour
         LineDrawer.thisLine = qualLinhaTileInicial;
 
         CleanMoves();
-        if (lineScript[LineDrawer.thisLine].tilesList.Count() - 2 >= 0)
+        if (lineScript[LineDrawer.thisLine].lineTilesList.Count() - 2 >= 0)
         {
-            lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
+            lineScript[LineDrawer.thisLine].lineTilesList[lineScript[LineDrawer.thisLine].lineTilesList.Count() - 2].isLastTile = true;
         }
         lineScript[LineDrawer.thisLine].CanMove();
     }
 
     public void CleanMoves() //Serve para "resetar" quais tiles o jogador pode mover para
     {
-        for (int i = 0; i < tilesList.Length; i++)
+        for (int i = 0; i < allTilesList.Length; i++)
         {
-            tilesList[i].isClose = false;
-            tilesList[i].isLastTile = false;
+            allTilesList[i].isClose = false;
+            allTilesList[i].isLastTile = false;
         }
     }//Quando mudar de linha (ou seja, mudar da linha "prova adaptada" para a "mudar aluno de sala"), executar novamente o código "CanMove()"
 }

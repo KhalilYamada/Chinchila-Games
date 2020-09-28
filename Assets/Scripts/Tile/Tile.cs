@@ -89,8 +89,10 @@ public class Tile : MonoBehaviour
 
         CleanMoves();
 
-        lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
-
+        if(isInitialTile == false)
+        {
+            lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
+        }
 
 
         lineScript[LineDrawer.thisLine].CanMove();

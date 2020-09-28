@@ -26,7 +26,6 @@ public class Tile : MonoBehaviour
 
     [Header("Qual Linha")]
     public int linhaNoTile;
-    private int linhaDefault = 10;
     public int qualLinhaTileInicial;
     public bool isInitialTile;
 
@@ -42,6 +41,8 @@ public class Tile : MonoBehaviour
         thisTile = GetComponent<Tile>();
         if (isInitialTile == true)
         {
+            linhaNoTile = qualLinhaTileInicial;
+
             isOcupied = true;
             isClose = true;
 
@@ -55,7 +56,7 @@ public class Tile : MonoBehaviour
     {
         if(isInitialTile == true)
         {
-            LineDrawer.thisLine = qualLinhaTileInicial;
+            ChangeLine();
         }
     }
 
@@ -77,7 +78,7 @@ public class Tile : MonoBehaviour
 
         CleanMoves();
 
-       // linhaNoTile = LineDrawer.thisLine; //PRECISO DEFINIR UM VALOR DEFAULT PRA VARIAVEL DE LINHA NO TILE
+        linhaNoTile = LineDrawer.thisLine; //PRECISO DEFINIR UM VALOR DEFAULT PRA VARIAVEL DE LINHA NO TILE
 
         lineScript[LineDrawer.thisLine].tilesList.Last().isLastTile = true;
 
@@ -91,7 +92,7 @@ public class Tile : MonoBehaviour
     {
         //PRECISO RESETAR O VALOR DEFAULT DA VARIÁVEL DE LINHA NO TILE
 
-        //linhaNoTile = linhaDefault;
+        lineScript[LineDrawer.thisLine].tilesList.Last().linhaNoTile = 10;
 
         lineScript[LineDrawer.thisLine].tilesList.Last().isOcupied = false;
 
@@ -110,6 +111,17 @@ public class Tile : MonoBehaviour
         lineScript[LineDrawer.thisLine].CanMove();
     }
 
+    public void ChangeLine()
+    {
+        LineDrawer.thisLine = qualLinhaTileInicial;
+
+        CleanMoves();
+        if (lineScript[LineDrawer.thisLine].tilesList.Count() - 2 >= 0)
+        {
+            lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
+        }
+        lineScript[LineDrawer.thisLine].CanMove();
+    }
 
     public void CleanMoves() //Serve para "resetar" quais tiles o jogador pode mover para
     {

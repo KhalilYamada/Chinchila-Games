@@ -171,6 +171,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 1
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -328,6 +329,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -485,6 +487,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -642,6 +645,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -799,6 +803,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -956,6 +961,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1113,6 +1119,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1414,6 +1421,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1654,6 +1662,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1811,6 +1820,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -1968,6 +1978,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2125,6 +2136,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2426,6 +2438,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2583,6 +2596,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2740,6 +2754,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -2897,6 +2912,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3086,6 +3102,7 @@ MonoBehaviour:
   isClose: 1
   isOcupied: 1
   isLastTile: 0
+  isFirstTile: 1
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3243,6 +3260,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3400,6 +3418,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3557,6 +3576,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3769,6 +3789,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -3926,6 +3947,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4083,6 +4105,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4240,6 +4263,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}
@@ -4397,6 +4421,7 @@ MonoBehaviour:
   isClose: 0
   isOcupied: 0
   isLastTile: 0
+  isFirstTile: 0
   allTilesList:
   - {fileID: 1278123405}
   - {fileID: 1645762188}

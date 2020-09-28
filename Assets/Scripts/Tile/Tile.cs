@@ -20,6 +20,7 @@ public class Tile : MonoBehaviour
     public bool isClose = false; //Se eu posso entrar nesse tile, ou seja, está próximo o suficiente, por padrão é falso pois "nenhum bloco está perto no início"
     public bool isOcupied; //Se esse tile já está ocupado por alguma das linhas
     public bool isLastTile; //Se esse tile for o último
+    public bool isFirstTile;
 
 
     [Header("Todos os tiles")]
@@ -50,7 +51,10 @@ public class Tile : MonoBehaviour
 
             lineScript[qualLinhaTileInicial].SetInitialPoint(transform);
             lineScript[qualLinhaTileInicial].lineTilesList.Add(thisTile);
-            lineScript[qualLinhaTileInicial].CanMove();
+            if(isFirstTile == true)
+            {
+                lineScript[qualLinhaTileInicial].CanMove();
+            }
         }
     }
 
@@ -61,6 +65,8 @@ public class Tile : MonoBehaviour
             ChangeLine();
         }
     }
+
+
 
     private void OnMouseEnter()
     {
@@ -73,6 +79,8 @@ public class Tile : MonoBehaviour
             Saiu();
         }
     }
+
+
 
     private void Entrou()
     {
@@ -88,6 +96,7 @@ public class Tile : MonoBehaviour
         lineScript[LineDrawer.thisLine].lineTilesList.Add(thisTile);  
         lineScript[LineDrawer.thisLine].CanMove();
     }
+
 
 
     private void Saiu()
@@ -112,6 +121,8 @@ public class Tile : MonoBehaviour
         lineScript[LineDrawer.thisLine].CanMove();
     }
 
+
+
     public void ChangeLine()
     {
         LineDrawer.thisLine = qualLinhaTileInicial;
@@ -123,6 +134,8 @@ public class Tile : MonoBehaviour
         }
         lineScript[LineDrawer.thisLine].CanMove();
     }
+
+
 
     public void CleanMoves() //Serve para "resetar" quais tiles o jogador pode mover para
     {

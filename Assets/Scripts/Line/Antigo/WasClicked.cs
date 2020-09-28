@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class WasClicked : MonoBehaviour
 {
+
+    /// <summary>
+    /// 
+    /// CÓDIGO DATADO, NÃO FOI DELETADO AINDA MAS ESTÁ EM DESUSO
+    /// 
+    /// </summary>
+    
+
+
     public LineDrawer lineScript;
     [HideInInspector]public bool hasEntered;
     public bool canRemove = false;

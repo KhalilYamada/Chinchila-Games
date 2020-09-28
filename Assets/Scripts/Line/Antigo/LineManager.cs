@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class LineManager : MonoBehaviour
 {
+
+
+    /// <summary>
+    /// 
+    /// CÓDIGO DATADO, NÃO FOI DELETADO AINDA MAS ESTÁ EM DESUSO
+    /// 
+    /// </summary>
+
+
+
+
     [SerializeField]
     public List<WasClicked> tilesList = new List<WasClicked>();
 

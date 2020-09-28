@@ -16,6 +16,7 @@ public class Tile : MonoBehaviour
 
     [Header("Qual Linha")]
     public int linhaNoTile;
+    private int linhaDefault = 10;
 
 
     [Header("Scripts")] 
@@ -62,6 +63,8 @@ public class Tile : MonoBehaviour
     {
         //PRECISO RESETAR O VALOR DEFAULT DA VARIÁVEL DE LINHA NO TILE
 
+        linhaNoTile = linhaDefault;
+
         lineScript[LineDrawer.thisLine].tilesList.Last().isOcupied = false;
 
         lineScript[LineDrawer.thisLine].lineRend.positionCount = lineScript[LineDrawer.thisLine].lineRend.positionCount - 1;
@@ -71,6 +74,8 @@ public class Tile : MonoBehaviour
         CleanMoves();
 
         lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
+
+
 
         lineScript[LineDrawer.thisLine].CanMove();
     }

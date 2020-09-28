@@ -42,15 +42,13 @@ public class Tile : MonoBehaviour
         }
     }
 
-
-
     private void Entrou()
     {
         isOcupied = true;
 
         CleanMoves();
 
-        linhaNoTile = LineDrawer.thisLine;
+        linhaNoTile = LineDrawer.thisLine; //PRECISO DEFINIR UM VALOR DEFAULT PRA VARIAVEL DE LINHA NO TILE
 
         lineScript[LineDrawer.thisLine].tilesList.Last().isLastTile = true;
 
@@ -62,7 +60,19 @@ public class Tile : MonoBehaviour
 
     private void Saiu()
     {
-        Debug.Log(gameObject.name);
+        //PRECISO RESETAR O VALOR DEFAULT DA VARIÁVEL DE LINHA NO TILE
+
+        lineScript[LineDrawer.thisLine].tilesList.Last().isOcupied = false;
+
+        lineScript[LineDrawer.thisLine].lineRend.positionCount = lineScript[LineDrawer.thisLine].lineRend.positionCount - 1;
+        lineScript[LineDrawer.thisLine].qualVertex = lineScript[LineDrawer.thisLine].qualVertex - 1;
+        lineScript[LineDrawer.thisLine].tilesList.Remove(lineScript[LineDrawer.thisLine].tilesList.Last());
+
+        CleanMoves();
+
+        lineScript[LineDrawer.thisLine].tilesList[lineScript[LineDrawer.thisLine].tilesList.Count() - 2].isLastTile = true;
+
+        lineScript[LineDrawer.thisLine].CanMove();
     }
 
 

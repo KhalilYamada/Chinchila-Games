@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.UIElements;
 
 public class LineDrawer : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class LineDrawer : MonoBehaviour
     private Vector2 mousePos; //Associa a posição do mouse
 
     [HideInInspector]
-    public int qualVertex = 1; //Acho que precisa mudar o nome, diz em qual dos lugares a posição vai ser associada
+    public int qualVertex = 2; //Acho que precisa mudar o nome, diz em qual dos lugares a posição vai ser associada
 
     [SerializeField]
     public List<Tile> tilesList = new List<Tile>();
@@ -30,10 +31,19 @@ public class LineDrawer : MonoBehaviour
     /// 
     /// </summary>
 
-    void Start()
+    void Awake()
     {
         lineRend = GetComponent<LineRenderer>();
         lineRend.positionCount = 1;
+    }
+
+    public void SetInitialPoint(Transform trans)
+    {
+        lineRend.positionCount = qualVertex + 1;
+
+        lineRend.SetPosition(qualVertex, new Vector3(Mathf.Round(trans.position.x), Mathf.Round(trans.position.y), 0f));
+
+        qualVertex++;
     }
 
     public void SetNewPoint()
@@ -45,7 +55,7 @@ public class LineDrawer : MonoBehaviour
         qualVertex++;
     }
 
-    public void CanMove()
+    public void CanMove() //Verifica e ativa os tiles próximos, permitindo se mover para eles
     { 
         RaycastHit2D[] hitU = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.up), 2);
         RaycastHit2D[] hitD = Physics2D.RaycastAll(tilesList.Last().GetComponent<Transform>().position, transform.TransformDirection(Vector3.down), 2);
@@ -57,31 +67,39 @@ public class LineDrawer : MonoBehaviour
         {
             //hitU[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
             //está como sprite rederer somente para verificar se está colidindo ou não
-
-            hitU[i].collider.GetComponent<Tile>().isClose = true;
+            if (hitU[i].collider.GetComponent<Tile>() != null)
+            {
+                hitU[i].collider.GetComponent<Tile>().isClose = true;
+            }
         }
         for (int i = 1; i < hitD.Length; i++)
         {
             //hitD[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
             //está como sprite rederer somente para verificar se está colidindo ou não
-
-            hitD[i].collider.GetComponent<Tile>().isClose = true;
+            if (hitD[i].collider.GetComponent<Tile>() != null)
+            {
+                hitD[i].collider.GetComponent<Tile>().isClose = true;
+            }
         }
 
         for (int i = 1; i < hitL.Length; i++)
         {
             //hitL[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
             //está como sprite rederer somente para verificar se está colidindo ou não
-
-            hitL[i].collider.GetComponent<Tile>().isClose = true;
+            if (hitL[i].collider.GetComponent<Tile>() != null)
+            {
+                hitL[i].collider.GetComponent<Tile>().isClose = true;
+            }
         }
 
         for (int i = 1; i < hitR.Length; i++)
         {
             //hitR[i].collider.GetComponent<SpriteRenderer>().color = Color.blue;
             //está como sprite rederer somente para verificar se está colidindo ou não
-
-            hitR[i].collider.GetComponent<Tile>().isClose = true;
+            if (hitR[i].collider.GetComponent<Tile>() != null)
+            {
+                hitR[i].collider.GetComponent<Tile>().isClose = true;
+            }
         }
     }
 }

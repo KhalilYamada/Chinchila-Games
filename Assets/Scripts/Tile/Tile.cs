@@ -10,13 +10,16 @@ public class Tile : MonoBehaviour
     public bool isOcupied; //Se esse tile já está ocupado por alguma das linhas
     public bool isLastTile; //Se esse tile for o último
 
-    [Header("Todos os cubos")]
+
+    [Header("Todos os tiles")]
     public Tile[] tilesList;
 
 
     [Header("Qual Linha")]
     public int linhaNoTile;
     private int linhaDefault = 10;
+    public int qualLinhaTileInicial;
+    public bool isInitialTile;
 
 
     [Header("Scripts")] 
@@ -28,12 +31,25 @@ public class Tile : MonoBehaviour
     private void Start()
     {
         thisTile = GetComponent<Tile>();
+        if (isInitialTile == true)
+        {
+            lineScript[qualLinhaTileInicial].SetInitialPoint(transform);
+            lineScript[qualLinhaTileInicial].tilesList.Add(thisTile);
+            lineScript[qualLinhaTileInicial].CanMove();
+        }
     }
 
+    private void OnMouseDown()
+    {
+        if(isInitialTile == true)
+        {
+            LineDrawer.thisLine = qualLinhaTileInicial;
+        }
+    }
 
     private void OnMouseEnter()
     {
-        if (isClose == true && isOcupied == false)
+        if ((isClose == true && isOcupied == false) && isInitialTile == false)
         {
             Entrou();
         }
@@ -49,7 +65,7 @@ public class Tile : MonoBehaviour
 
         CleanMoves();
 
-        linhaNoTile = LineDrawer.thisLine; //PRECISO DEFINIR UM VALOR DEFAULT PRA VARIAVEL DE LINHA NO TILE
+       // linhaNoTile = LineDrawer.thisLine; //PRECISO DEFINIR UM VALOR DEFAULT PRA VARIAVEL DE LINHA NO TILE
 
         lineScript[LineDrawer.thisLine].tilesList.Last().isLastTile = true;
 
@@ -63,7 +79,7 @@ public class Tile : MonoBehaviour
     {
         //PRECISO RESETAR O VALOR DEFAULT DA VARIÁVEL DE LINHA NO TILE
 
-        linhaNoTile = linhaDefault;
+        //linhaNoTile = linhaDefault;
 
         lineScript[LineDrawer.thisLine].tilesList.Last().isOcupied = false;
 
@@ -81,7 +97,7 @@ public class Tile : MonoBehaviour
     }
 
 
-    private void CleanMoves() //Serve para "resetar" quais tiles o jogador pode mover para
+    public void CleanMoves() //Serve para "resetar" quais tiles o jogador pode mover para
     {
         for (int i = 0; i < tilesList.Length; i++)
         {

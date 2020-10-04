@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class VideoManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class VideoManager : MonoBehaviour
 	void OnMovieFinished(VideoPlayer player)
 	{
 		player.Stop();
+		SceneManager.LoadScene(1);
 		Destroy(gameObject);
 		
 	}

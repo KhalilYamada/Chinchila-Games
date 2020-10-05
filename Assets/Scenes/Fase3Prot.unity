@@ -174,13 +174,37 @@ MonoBehaviour:
   TinderUnitPrefab: {fileID: 5159074392849580054, guid: 1e0ff1dc92f57964e97d98b7c8be59fb, type: 3}
   topText: {fileID: 1135915782}
   texto:
-  - mensagem um
-  - mensagem numero 2
-  - mens. C
-  resposta:
-  - resposta um
-  - resposta pro bagulho 2
-  - "resp da \xFAltima posi\xE7\xE3o"
+  - "A crian\xE7a n\xE3o se concentra quando a sala est\xE1 barulhenta"
+  - "Recomendo que os pais comprem um fone de ouvido anti-ru\xEDdo"
+  - "A turma est\xE1 animada e isso est\xE1 fazendo com que a crian\xE7a se distraia
+    f\xE1cil"
+  - "Os outros alunos est\xE3o implicando com o Jo\xE3o(Crian\xE7a) por causa do
+    fone anti-ruido"
+  - "O Jo\xE3o tem faltado muito na minha aula, quais atitudes eu deveria tomar? "
+  - "Meu filho est\xE1 tendo um desempenho baixo nas aulas de m\xFAsica, o que voc\xEA
+    me diz sobre isso? "
+  - "Meu filho tem dito que a sala de aula \xE9 muito barulhenta "
+  - "A crian\xE7a est\xE1 fazendo prova mas alguns alunos que j\xE1 terminaram n\xE3o
+    param de falar "
+  respostaLeft:
+  - Pedir para conversar com os pais do aluno
+  - "N\xE3o fazer nada por medo do aluno sofrer bullying "
+  - "Voc\xEA continua com a aula, afinal a crian\xE7a tamb\xE9m deve se adaptar ao
+    mundo"
+  - "N\xE3o fazer nada pois isso \xE9 problema dos pais"
+  - "Recomendar que a professora de m\xFAsica fale com o psicopedagogo sobre a situa\xE7\xE3o"
+  - Dizer que eles devem conversar com ele quando chegarem em casa
+  - "Recomendar que comprem um fone de ouvido anti ru\xEDdo"
+  - "N\xE3o fazer nada pois crian\xE7as s\xE3o sempre crian\xE7as"
+  respostaRight:
+  - Repreender ela na frente de todos
+  - Pedir para conversar com os pais do aluno
+  - "Faz de tudo para a sala ficar sempre quieta independente do que aconte\xE7a"
+  - "Explicar para as crian\xE7as que elas n\xE3o devem fazer isso"
+  - "Informar os pais que o aluno tem fugido da aula de m\xFAsica"
+  - "Recomendar que levem a crian\xE7a no psic\xF3logo"
+  - Falar que vai tentar manter a sala quieta
+  - Repreender os alunos, afinal, eles podem acabar atrapalhando a turma
 --- !u!1 &281520232
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,17 +296,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408115665}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7070806, w: 0.707133}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.2239938, y: 3.2239938, z: 3.2239938}
+  m_LocalScale: {x: 6.4815173, y: 6.4815173, z: 6.4815173}
   m_Children: []
   m_Father: {fileID: 1456365412}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.996}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1260, y: 709}
+  m_AnchoredPosition: {x: -1003, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408115667
 MonoBehaviour:
@@ -304,7 +328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b70edc366838bba4fa476e6cfec4355f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5750df65663cd847acf2a0957204cbd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -388,8 +412,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -406,10 +430,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -442,7 +466,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -74.988495, y: 0, z: -75.29877, w: -41.43207}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

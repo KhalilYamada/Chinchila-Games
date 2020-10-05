@@ -9,7 +9,8 @@ public class TinderManager : MonoBehaviour
 	public TMP_Text topText;
 
 	public string[] texto;
-	public string[] resposta;
+	public string[] respostaLeft;
+	public string[] respostaRight;
 
 	public static int index;
 
@@ -17,9 +18,14 @@ public class TinderManager : MonoBehaviour
 	private void Start()
 	{
 		index = 0;
+		
 		for (int i = texto.Length-1; i >= 0; i--)
 		{
-			Instantiate<GameObject>(TinderUnitPrefab, transform).SendMessage("ChangeText", resposta[i]);
+			GameObject instance;
+			instance = Instantiate<GameObject>(TinderUnitPrefab, transform);
+			instance.SendMessage("ChangeLeftText", respostaLeft[i]);
+			instance.SendMessage("ChangeRightText", respostaRight[i]);
+			instance.SendMessage("TellIndex", i);
 		}
 		
 	}
@@ -32,7 +38,7 @@ public class TinderManager : MonoBehaviour
 		}
 		else
 		{
-			topText.text = "acabooou krai";
+			topText.text = "fim da fase";
 		}
 	}
 }

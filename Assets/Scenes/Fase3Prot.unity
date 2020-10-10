@@ -173,38 +173,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TinderUnitPrefab: {fileID: 5159074392849580054, guid: 1e0ff1dc92f57964e97d98b7c8be59fb, type: 3}
   topText: {fileID: 1135915782}
-  texto:
-  - "A crian\xE7a n\xE3o se concentra quando a sala est\xE1 barulhenta"
-  - "Recomendo que os pais comprem um fone de ouvido anti-ru\xEDdo"
-  - "A turma est\xE1 animada e isso est\xE1 fazendo com que a crian\xE7a se distraia
-    f\xE1cil"
-  - "Os outros alunos est\xE3o implicando com o Jo\xE3o(Crian\xE7a) por causa do
-    fone anti-ruido"
-  - "O Jo\xE3o tem faltado muito na minha aula, quais atitudes eu deveria tomar? "
-  - "Meu filho est\xE1 tendo um desempenho baixo nas aulas de m\xFAsica, o que voc\xEA
-    me diz sobre isso? "
-  - "Meu filho tem dito que a sala de aula \xE9 muito barulhenta "
-  - "A crian\xE7a est\xE1 fazendo prova mas alguns alunos que j\xE1 terminaram n\xE3o
-    param de falar "
-  respostaLeft:
-  - Pedir para conversar com os pais do aluno
-  - "N\xE3o fazer nada por medo do aluno sofrer bullying "
-  - "Voc\xEA continua com a aula, afinal a crian\xE7a tamb\xE9m deve se adaptar ao
-    mundo"
-  - "N\xE3o fazer nada pois isso \xE9 problema dos pais"
-  - "Recomendar que a professora de m\xFAsica fale com o psicopedagogo sobre a situa\xE7\xE3o"
-  - Dizer que eles devem conversar com ele quando chegarem em casa
-  - "Recomendar que comprem um fone de ouvido anti ru\xEDdo"
-  - "N\xE3o fazer nada pois crian\xE7as s\xE3o sempre crian\xE7as"
-  respostaRight:
-  - Repreender ela na frente de todos
-  - Pedir para conversar com os pais do aluno
-  - "Faz de tudo para a sala ficar sempre quieta independente do que aconte\xE7a"
-  - "Explicar para as crian\xE7as que elas n\xE3o devem fazer isso"
-  - "Informar os pais que o aluno tem fugido da aula de m\xFAsica"
-  - "Recomendar que levem a crian\xE7a no psic\xF3logo"
-  - Falar que vai tentar manter a sala quieta
-  - Repreender os alunos, afinal, eles podem acabar atrapalhando a turma
+  unitInfo:
+  - {fileID: 11400000, guid: 6d9053cda1b766a4489fa69c73a5240b, type: 2}
+  - {fileID: 11400000, guid: 9f2363179582e724985608050c6f6df9, type: 2}
+  - {fileID: 11400000, guid: f56e7b4988149d9478d04dcf4c95437a, type: 2}
+  - {fileID: 11400000, guid: 83ef39bc4c7ec5f4e811d8dbe5cf3203, type: 2}
+  - {fileID: 11400000, guid: 40c8b3475f8c6c0429146d891ae10e1f, type: 2}
+  - {fileID: 11400000, guid: c19ca7bc7fcf90147a574d3fa0fd47fc, type: 2}
+  - {fileID: 11400000, guid: 8b1d333174f5ed447a24058a59320720, type: 2}
+  - {fileID: 11400000, guid: b1d48b19d9877b24baf275d56b68eb7a, type: 2}
 --- !u!1 &281520232
 GameObject:
   m_ObjectHideFlags: 0

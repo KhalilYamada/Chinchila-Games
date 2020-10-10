@@ -8,9 +8,7 @@ public class TinderManager : MonoBehaviour
 	public GameObject TinderUnitPrefab;
 	public TMP_Text topText;
 
-	public string[] texto;
-	public string[] respostaLeft;
-	public string[] respostaRight;
+	public TinderUnit[] unitInfo;
 
 	public static int index;
 
@@ -19,22 +17,23 @@ public class TinderManager : MonoBehaviour
 	{
 		index = 0;
 		
-		for (int i = texto.Length-1; i >= 0; i--)
+		for (int i = unitInfo.Length-1; i >= 0; i--)
 		{
 			GameObject instance;
 			instance = Instantiate<GameObject>(TinderUnitPrefab, transform);
-			instance.SendMessage("ChangeLeftText", respostaLeft[i]);
-			instance.SendMessage("ChangeRightText", respostaRight[i]);
-			instance.SendMessage("TellIndex", i);
+			TinderSwipe swipe = instance.GetComponent<TinderSwipe>();
+			swipe.textLeft.text =  unitInfo[i].textLeft;
+			swipe.textRight.text = unitInfo[i].textRight;
+			swipe.thisIndex = i;
 		}
 		
 	}
 
 	private void Update()
 	{
-		if (index < texto.Length)
+		if (index < unitInfo.Length)
 		{
-			topText.text = texto[index];
+			topText.text = unitInfo[index].textMain;
 		}
 		else
 		{

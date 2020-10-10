@@ -24,7 +24,8 @@ public class TinderSwipe : MonoBehaviour
 	public bool right;
 	public bool left;
 
-	private int thisIndex;
+	[HideInInspector]
+	public int thisIndex;
 
 	private void Start()
 	{
@@ -34,51 +35,32 @@ public class TinderSwipe : MonoBehaviour
 	}
 	private void Update()
 	{
-		if (goingLeft)
-		{
-			textLeft.transform.localPosition = Vector3.Lerp(textLeft.transform.localPosition, new Vector3(100, textLeft.transform.localPosition.y, textLeft.transform.localPosition.z), 0.2f);
-		}
-		else
-		{
-			textLeft.transform.localPosition = Vector3.Lerp(textLeft.transform.localPosition, new Vector3(0, textLeft.transform.localPosition.y, textLeft.transform.localPosition.z), 0.2f);
-		}
-		if (goingRight)
-		{
-			textRight.transform.localPosition = Vector3.Lerp(textRight.transform.localPosition, new Vector3(-100, textRight.transform.localPosition.y, textRight.transform.localPosition.z), 0.2f);
-		}
-		else
-		{
-			textRight.transform.localPosition = Vector3.Lerp(textRight.transform.localPosition, new Vector3(0, textRight.transform.localPosition.y, textRight.transform.localPosition.z), 0.2f);
-		}
+		textLeft.transform.localPosition = Vector3.Lerp(textLeft.transform.localPosition, new Vector3(goingLeft ? 100 : 0, textLeft.transform.localPosition.y, textLeft.transform.localPosition.z), 0.2f);
+		textRight.transform.localPosition = Vector3.Lerp(textRight.transform.localPosition, new Vector3(goingRight ? -100 : 0, textRight.transform.localPosition.y, textRight.transform.localPosition.z), 0.2f);
 
-		if (thisIndex == TinderManager.index)
+		boxCollider.enabled = (thisIndex == TinderManager.index);
+
+		if (!manualMove)
 		{
-			boxCollider.enabled = true;
+			if (right)
+			{
+				transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(1000, -90, 0), 0.2f);
+				transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, -11), 0.2f);
+			}
+			else if (left)
+			{
+				transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-1000, -90, 0), 0.2f);
+				transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, 11), 0.2f);
+			}
+			else
+			{
+				transform.position = Vector3.Lerp(transform.position, originalPosition, 0.2f);
+				transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, 0.2f);
+			}
 		}
-
-		if (manualMove) return;
-
-		if (!right && !left)
-		{
-			transform.position = Vector3.Lerp(transform.position, originalPosition, 0.2f);
-			transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, 0.2f);
-		}
-		else if (right)
-		{
-			transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(1000, -90, 0), 0.2f);
-			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, -11), 0.2f);
-		}
-		else if (left)
-		{
-			transform.localPosition = Vector3.Lerp(transform.localPosition, new Vector3(-1000, -90, 0), 0.2f);
-			transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, 11), 0.2f);
-		}
-
-
-		
-
 	}
 
+	#region Input Management
 	private void OnMouseDown()
 	{
 		oldTouchPosition = Input.mousePosition.x;
@@ -101,7 +83,6 @@ public class TinderSwipe : MonoBehaviour
 			goingLeft = true;
 			goingRight = false;
 		}
-
 	}
 
 	private void OnMouseUp()
@@ -125,18 +106,6 @@ public class TinderSwipe : MonoBehaviour
 		goingRight = false;
 		manualMove = false;
 	}
+	#endregion
 
-
-	public void ChangeLeftText(string texto)
-	{
-		textLeft.text = texto; // hmm, esse texto é feito de texto
-	}
-	public void ChangeRightText(string texto)
-	{
-		textRight.text = texto; // hmm, esse texto é feito de texto
-	}
-	public void TellIndex(int index)
-	{
-		thisIndex = index;
-	}
 }

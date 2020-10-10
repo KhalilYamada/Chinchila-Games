@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
+  m_Name: 1 - 5
+  m_EditorClassIdentifier: 
+  textMain: "O Jo\xE3o tem faltado muito na minha aula, quais atitudes eu deveria
+    tomar?"
+  textRight: "Recomendar que a professora de m\xFAsica fale com o psicopedagogo sobre
+    a situa\xE7\xE3o"
+  textLeft: "Informar os pais que o aluno tem fugido da aula de m\xFAsica"
+  sprite: {fileID: 0}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class FingerScroll : MonoBehaviour
 {
 	public GameObject[] targetObject;
+	private Vector3[] originalPosition;
 
 	public float deccelSpeed;
 
@@ -12,9 +13,17 @@ public class FingerScroll : MonoBehaviour
 	private float oldTouchPosition;
 	private bool manualMove;
 
+	[HideInInspector] public bool outOfBounds;
+	[HideInInspector] public Transform whereToGoBack;
 
-	public bool outOfBounds;
-	public Transform whereToGoBack;
+	private void Start()
+	{
+		originalPosition = new Vector3[targetObject.Length];
+		for (int i = 0; i < targetObject.Length; i++)
+		{
+			originalPosition[i] = targetObject[i].transform.localPosition;
+		}
+	}
 
 	private void Update()
 	{
@@ -38,7 +47,7 @@ public class FingerScroll : MonoBehaviour
 			}
 			else
 			{
-				targetObject[i].transform.localPosition = new Vector3(0, 0, 0);
+				targetObject[i].transform.localPosition = originalPosition[i];
 			}
 		}
 	}

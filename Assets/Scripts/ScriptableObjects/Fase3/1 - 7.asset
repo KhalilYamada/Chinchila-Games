@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1 - 7
   m_EditorClassIdentifier: 
   textMain: "Meu filho tem dito que a sala de aula \xE9 muito barulhenta"
+  textCharacterName: Jigglypuff
   textRight: "Recomendar que comprem um fone de ouvido anti ru\xEDdo"
   textLeft: Falar que vai tentar manter a sala quieta
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 338695bfb7196a04ab16e01143b7d8f8, type: 3}

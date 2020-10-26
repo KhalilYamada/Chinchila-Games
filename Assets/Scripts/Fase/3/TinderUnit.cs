@@ -6,6 +6,7 @@ using UnityEngine;
 public class TinderUnit : ScriptableObject
 {
 	public string textMain;
+	public string textCharacterName;
 	public string textRight;
 	public string textLeft;
 

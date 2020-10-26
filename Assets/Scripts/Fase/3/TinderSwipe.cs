@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class TinderSwipe : MonoBehaviour
@@ -8,8 +9,12 @@ public class TinderSwipe : MonoBehaviour
 	private Vector3 originalPosition;
 	private Quaternion originalRotation;
 	public TMP_Text textLeft;
+	public GameObject frameLeft;
 	public TMP_Text textRight;
+	public GameObject frameRight;
 	private BoxCollider2D boxCollider;
+	[HideInInspector] public TinderUnit unitInfo;
+	private Image image;
 
 	private string state;
 	private float speed;
@@ -20,23 +25,35 @@ public class TinderSwipe : MonoBehaviour
 
 	private bool goingRight;
 	private bool goingLeft;
-
-	public bool right;
-	public bool left;
+	private bool right;
+	private bool left;
 
 	[HideInInspector]
 	public int thisIndex;
+
+	public bool isInverted;
+	public bool matched;
 
 	private void Start()
 	{
 		originalPosition = transform.position;
 		originalRotation = transform.rotation;
 		boxCollider = GetComponent<BoxCollider2D>();
+		image = GetComponent<Image>();
+
+		isInverted = (Random.Range(0, 2) == 1);
+
+		textLeft.text = isInverted ? unitInfo.textRight : unitInfo.textLeft;
+		textRight.text = isInverted ? unitInfo.textLeft : unitInfo.textRight;
+		image.sprite = unitInfo.sprite;
+		goingLeft = false;
+		goingRight = false;
+		manualMove = false;
 	}
 	private void Update()
 	{
-		textLeft.transform.localPosition = Vector3.Lerp(textLeft.transform.localPosition, new Vector3(goingLeft ? 100 : 0, textLeft.transform.localPosition.y, textLeft.transform.localPosition.z), 0.2f);
-		textRight.transform.localPosition = Vector3.Lerp(textRight.transform.localPosition, new Vector3(goingRight ? -100 : 0, textRight.transform.localPosition.y, textRight.transform.localPosition.z), 0.2f);
+		frameLeft.transform.localPosition = Vector3.Lerp(frameLeft.transform.localPosition, new Vector3(goingLeft ? 0 : 150, frameLeft.transform.localPosition.y, frameLeft.transform.localPosition.z), 0.2f);
+		frameRight.transform.localPosition = Vector3.Lerp(frameRight.transform.localPosition, new Vector3(goingRight ? 0 : -150, frameRight.transform.localPosition.y, frameRight.transform.localPosition.z), 0.2f);
 
 		boxCollider.enabled = (thisIndex == TinderManager.index);
 
@@ -97,11 +114,14 @@ public class TinderSwipe : MonoBehaviour
 			}
 			else if (goingLeft && speed > 0)
 			{
+
 				left = true;
 				TinderManager.index++;
 			}
 
 		}
+
+		matched = isInverted ? left : right;
 		goingLeft = false;
 		goingRight = false;
 		manualMove = false;

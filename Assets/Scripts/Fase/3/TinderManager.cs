@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TinderManager : MonoBehaviour
 {
 	public GameObject TinderUnitPrefab;
 	public TMP_Text topText;
-
+	public TMP_Text bottomText;
 	public TinderUnit[] unitInfo;
+	public TinderBarFill barFill;
 
 	public static int index;
 
@@ -16,16 +18,21 @@ public class TinderManager : MonoBehaviour
 	private void Start()
 	{
 		index = 0;
-		
+		barFill.unitInfo = new TinderSwipe[unitInfo.Length];
+
+
 		for (int i = unitInfo.Length-1; i >= 0; i--)
 		{
 			GameObject instance;
 			instance = Instantiate<GameObject>(TinderUnitPrefab, transform);
 			TinderSwipe swipe = instance.GetComponent<TinderSwipe>();
-			swipe.textLeft.text =  unitInfo[i].textLeft;
-			swipe.textRight.text = unitInfo[i].textRight;
+			swipe.unitInfo = unitInfo[i];
 			swipe.thisIndex = i;
+
+			
+			barFill.unitInfo.SetValue(swipe, i);
 		}
+		
 		
 	}
 
@@ -34,10 +41,12 @@ public class TinderManager : MonoBehaviour
 		if (index < unitInfo.Length)
 		{
 			topText.text = unitInfo[index].textMain;
+			bottomText.text = unitInfo[index].textCharacterName;
 		}
 		else
 		{
 			topText.text = "fim da fase";
+			bottomText.text = "";
 		}
 	}
 }

@@ -8,6 +8,7 @@ public class TinderSwipe : MonoBehaviour
 {
 	private Vector3 originalPosition;
 	private Quaternion originalRotation;
+	[Header("Objetos que serão posicionados e mudados de acordo com estado")]
 	public TMP_Text textLeft;
 	public GameObject frameLeft;
 	public TMP_Text textRight;
@@ -15,9 +16,12 @@ public class TinderSwipe : MonoBehaviour
 	private BoxCollider2D boxCollider;
 	[HideInInspector] public TinderUnit unitInfo;
 	private Image image;
+	public GameObject positioner;
 
 	private string state;
 	private float speed;
+
+	[Header("Velocidade de movimento mínima para contar como swipe")]
 	public float limitFingerSpeed;
 
 	private float oldTouchPosition;
@@ -31,6 +35,7 @@ public class TinderSwipe : MonoBehaviour
 	[HideInInspector]
 	public int thisIndex;
 
+	[Header("Controle de vitória e condição")]
 	public bool isInverted;
 	public bool matched;
 
@@ -75,6 +80,9 @@ public class TinderSwipe : MonoBehaviour
 				transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, 0.2f);
 			}
 		}
+
+		positioner.transform.position = originalPosition;
+		positioner.transform.rotation = Quaternion.identity;
 	}
 
 	#region Input Management

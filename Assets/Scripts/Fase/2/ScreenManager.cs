@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ScreenManager : MonoBehaviour
 {
-	public int buttonIndex = 0;
+	public int screenIndex = 0;
 
 	[Header("Total Screens")]
 	public GameObject[] screens;
+	public GameObject tabs;
 
 	[Header("Main Screen Buttons")]
 	public GameObject[] buttonHighlight;
@@ -18,14 +19,7 @@ public class ScreenManager : MonoBehaviour
 
     void Start()
     {
-		for (int i = 0; i < buttonHighlight.Length; i++)
-		{
-			if (!finishedThisWord[i])
-			{
-				SetHighlightedWord(i);
-				break;
-			}
-		}
+		
     }
 	
     void Update()
@@ -33,16 +27,6 @@ public class ScreenManager : MonoBehaviour
         
     }
 
-
-	public void SetHighlightedWord(int index)
-	{
-		buttonIndex = index;
-		for (int i = 0; i < buttonHighlight.Length; i++)
-		{
-			buttonHighlight[i].SetActive(false);
-		}
-		buttonHighlight[buttonIndex].SetActive(true);
-	}
 
 	public void ChangeScreens()
 	{
@@ -52,7 +36,49 @@ public class ScreenManager : MonoBehaviour
 			screens[i].SetActive(false);
 		}
 
-		screens[isOnMain ? buttonIndex + 1 : 0].SetActive(true); //se estiver na tela principal, vai pra tela correspondente à palavra selecionada, senão, vai pra tela principal
+		if (isOnMain)
+		{
+			screens[screenIndex + 1].SetActive(true);
+			tabs.SetActive(true);
+		}
+		else
+		{
+			screens[0].SetActive(true);
+			tabs.SetActive(false);
+		}
+	}
 
+	public void ChangeTab(string direction)
+	{
+		switch (direction)
+		{
+			default:
+				break;
+			case "L":
+			case "l":
+				screenIndex--;
+				break;
+
+			case "R":
+			case "r":
+				screenIndex++;
+				break;
+		}
+		
+		if (screenIndex < 1)
+		{
+			screenIndex = screens.Length - 1;
+		}
+		if (screenIndex > screens.Length - 1)
+		{
+			screenIndex = 1;
+		}
+
+		for (int i = 0; i < screens.Length; i++)
+		{
+			screens[i].SetActive(false);
+		}
+
+		screens[screenIndex].SetActive(true);
 	}
 }

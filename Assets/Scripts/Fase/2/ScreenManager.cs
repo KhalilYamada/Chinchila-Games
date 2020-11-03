@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ScreenManager : MonoBehaviour
 {
@@ -10,17 +12,23 @@ public class ScreenManager : MonoBehaviour
 	public GameObject[] screens;
 	public GameObject tabs;
 
-	[Header("Main Screen Buttons")]
+	[Header("Write Texts")]
 	public GameObject[] buttonHighlight;
 	public bool[] finishedThisWord;
 
 
-	
+	private int textIndex;
+	public TMP_Text[] Texts;
+	private TMP_Text currentText;
 
     void Start()
     {
-		
-    }
+		for (int i = 0; i < buttonHighlight.Length; i++)
+		{
+			buttonHighlight[i].SetActive(false);
+		}
+		textIndex = 0;
+	}
 	
     void Update()
     {
@@ -80,5 +88,22 @@ public class ScreenManager : MonoBehaviour
 		}
 
 		screens[screenIndex].SetActive(true);
+	}
+
+	public void ChangeTextIndex(int ind)
+	{
+		textIndex = ind;
+		currentText = Texts[ind];
+		for (int i = 0; i < buttonHighlight.Length; i++)
+		{
+			buttonHighlight[i].SetActive(false);
+		}
+
+		buttonHighlight[ind].SetActive(true);
+	}
+
+	public void AddChar(string character)
+	{
+		currentText.text += character;
 	}
 }

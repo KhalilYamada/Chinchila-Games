@@ -12,18 +12,21 @@ public class ScreenManager : MonoBehaviour
 	public GameObject[] screens;
 	public GameObject tabs;
 
-	[Header("Write Texts")]
-	public GameObject[] buttonHighlight;
-	public bool[] finishedThisWord;
-
-
+	[Header("Text Objects")]
+	public GameObject[] buttonsObjects;
+	private List<Button> buttons = new List<Button>();
+	private List<GameObject> buttonHighlight = new List<GameObject>();
+	[HideInInspector] public List<bool> finishedThisWord = new List<bool>(); //Variável que mostra se cada texto é igual ao texto esperado
+	private List<TMP_Text> texts = new List<TMP_Text>();
 	private int textIndex;
-	public TMP_Text[] Texts;
 	private TMP_Text currentText;
 
     void Start()
     {
-		for (int i = 0; i < buttonHighlight.Length; i++)
+		FindButtonObjects();
+
+
+		for (int i = 0; i < buttonHighlight.Count; i++)
 		{
 			buttonHighlight[i].SetActive(false);
 		}
@@ -34,6 +37,17 @@ public class ScreenManager : MonoBehaviour
     {
         
     }
+
+	private void FindButtonObjects()
+	{
+		for (int i = 0; i < buttonsObjects.Length; i++)
+		{
+			buttons.Add(buttonsObjects[i].GetComponent<Button>());
+			buttonHighlight.Add(buttonsObjects[i].transform.GetChild(0).GetComponent<Image>().gameObject);
+			finishedThisWord.Add(false);
+			texts.Add(buttonsObjects[i].GetComponentInChildren<TMP_Text>());
+		}
+	}
 
 
 	public void ChangeScreens()
@@ -93,8 +107,8 @@ public class ScreenManager : MonoBehaviour
 	public void ChangeTextIndex(int ind)
 	{
 		textIndex = ind;
-		currentText = Texts[ind];
-		for (int i = 0; i < buttonHighlight.Length; i++)
+		currentText = texts[ind];
+		for (int i = 0; i < buttonHighlight.Count; i++)
 		{
 			buttonHighlight[i].SetActive(false);
 		}

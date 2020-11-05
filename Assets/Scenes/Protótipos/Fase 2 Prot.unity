@@ -413,15 +413,11 @@ MonoBehaviour:
   - {fileID: 595680648}
   - {fileID: 938063048}
   tabs: {fileID: 1152109844}
-  buttonHighlight:
-  - {fileID: 685993060}
-  - {fileID: 2079497108}
-  - {fileID: 413386053}
+  buttonsObjects:
+  - {fileID: 1339619567}
+  - {fileID: 101456552}
+  - {fileID: 1197503204}
   finishedThisWord: 000000
-  Texts:
-  - {fileID: 1609854949}
-  - {fileID: 800192354}
-  - {fileID: 894945510}
 --- !u!114 &178930762
 MonoBehaviour:
   m_ObjectHideFlags: 0

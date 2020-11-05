@@ -417,6 +417,10 @@ MonoBehaviour:
   - {fileID: 1339619567}
   - {fileID: 101456552}
   - {fileID: 1197503204}
+  wordAnswers:
+  - Aeiou
+  - Uieoa
+  - Ae
   finishedThisWord: 000000
 --- !u!114 &178930762
 MonoBehaviour:

@@ -14,6 +14,7 @@ public class ScreenManager : MonoBehaviour
 
 	[Header("Text Objects")]
 	public GameObject[] buttonsObjects;
+	public string[] wordAnswers;
 	private List<Button> buttons = new List<Button>();
 	private List<GameObject> buttonHighlight = new List<GameObject>();
 	[HideInInspector] public List<bool> finishedThisWord = new List<bool>(); //Variável que mostra se cada texto é igual ao texto esperado
@@ -35,7 +36,7 @@ public class ScreenManager : MonoBehaviour
 	
     void Update()
     {
-        
+		IgnoreFinishedText();
     }
 
 	private void FindButtonObjects()
@@ -46,6 +47,17 @@ public class ScreenManager : MonoBehaviour
 			buttonHighlight.Add(buttonsObjects[i].transform.GetChild(0).GetComponent<Image>().gameObject);
 			finishedThisWord.Add(false);
 			texts.Add(buttonsObjects[i].GetComponentInChildren<TMP_Text>());
+		}
+	}
+
+	private void IgnoreFinishedText()
+	{
+		if (currentText == null) return;
+		if (textIndex >= 0 && currentText.text == wordAnswers[textIndex])
+		{
+			finishedThisWord[textIndex] = true;
+			buttonHighlight[textIndex].SetActive(false);
+			textIndex = -1;
 		}
 	}
 
@@ -113,11 +125,26 @@ public class ScreenManager : MonoBehaviour
 			buttonHighlight[i].SetActive(false);
 		}
 
-		buttonHighlight[ind].SetActive(true);
+		if (textIndex >= 0 && currentText.text != wordAnswers[textIndex])
+		{
+			buttonHighlight[textIndex].SetActive(true);
+		}
 	}
 
 	public void AddChar(string character)
 	{
+		if (currentText == null) return;
+		if (currentText.text == "")
+		{
+			character = character.ToUpper(); //eu quase fiz isso na mão pq n esperava que fosse~ tão fácil, aushauhsuasuhau
+		}
+
 		currentText.text += character;
+	}
+
+	public void DeleteLastChar()
+	{
+		if (currentText == null) return;
+		currentText.text = currentText.text.Remove(currentText.text.Length - 1);
 	}
 }

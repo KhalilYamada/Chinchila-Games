@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -37,6 +38,7 @@ public class ScreenManager : MonoBehaviour
     void Update()
     {
 		IgnoreFinishedText();
+		FinishedWords();
     }
 
 	private void FindButtonObjects()
@@ -60,6 +62,16 @@ public class ScreenManager : MonoBehaviour
 			textIndex = -1;
 			currentText = null;
 		}
+	}
+
+	private void FinishedWords()
+	{
+		if (!finishedThisWord.Contains(false))
+		{
+			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
+			SceneManager.LoadScene("Menu");
+		}
+
 	}
 
 

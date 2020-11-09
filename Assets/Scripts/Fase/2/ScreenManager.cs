@@ -58,6 +58,7 @@ public class ScreenManager : MonoBehaviour
 			finishedThisWord[textIndex] = true;
 			buttonHighlight[textIndex].SetActive(false);
 			textIndex = -1;
+			currentText = null;
 		}
 	}
 
@@ -118,6 +119,7 @@ public class ScreenManager : MonoBehaviour
 
 	public void ChangeTextIndex(int ind)
 	{
+		DeleteEntireWord();
 		textIndex = ind;
 		currentText = texts[ind];
 		for (int i = 0; i < buttonHighlight.Count; i++)
@@ -146,5 +148,11 @@ public class ScreenManager : MonoBehaviour
 	{
 		if (currentText == null) return;
 		currentText.text = currentText.text.Remove(currentText.text.Length - 1);
+	}
+
+	public void DeleteEntireWord()
+	{
+		if (currentText == null) return;
+		currentText.text = "";
 	}
 }

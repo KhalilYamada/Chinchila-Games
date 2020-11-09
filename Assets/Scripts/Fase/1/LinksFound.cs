@@ -19,9 +19,15 @@ public class LinksFound : MonoBehaviour
 		CheckIfFinished();
     }
 
+	public void MoreLinks(GameObject gameobject)
+	{
+		linksAmount++;
+		Destroy(gameobject);
+	}
+
 	private void CheckIfFinished()
 	{
-		if (linksAmount > totalLinks)
+		if (linksAmount >= totalLinks)
 		{
 			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
 			SceneManager.LoadScene("Menu");

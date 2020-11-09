@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 - 2
   m_EditorClassIdentifier: 
   textMain: "Recomendo que os pais comprem um fone de ouvido anti-ru\xEDdo"
-  textCharacterName: Charmander
+  textCharacterName: "Psicopedagogo M\xE1rio"
   textRight: Pedir para conversar com os pais do aluno
   textLeft: "N\xE3o fazer nada por medo do aluno sofrer bullying"
-  sprite: {fileID: 21300000, guid: 90beab3d0e0640143b085ffae833a0e3, type: 3}
+  sprite: {fileID: 6450005796919116881, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

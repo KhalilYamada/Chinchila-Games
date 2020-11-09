@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMain: "Meu filho est\xE1 tendo um desempenho baixo nas aulas de m\xFAsica,
     o que voc\xEA me diz sobre isso?"
-  textCharacterName: Venonat
+  textCharacterName: Pais
   textRight: "Recomendar que levem a crian\xE7a no psic\xF3logo"
   textLeft: Dizer que eles devem conversar com ele quando chegarem em casa
-  sprite: {fileID: 21300000, guid: a987262079104e54db1670b5152ba5d1, type: 3}
+  sprite: {fileID: 5316594832770754760, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

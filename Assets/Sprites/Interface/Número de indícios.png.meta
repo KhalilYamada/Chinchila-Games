@@ -1,0 +1,1426 @@
+fileFormatVersion: 2
+guid: 6790bb3f543b44541a6150f1d0d6708f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8933326076524386856
+    second: "N\xFAmero de ind\xEDcios_0"
+  - first:
+      213: 1290391301529749807
+    second: "N\xFAmero de ind\xEDcios_1"
+  - first:
+      213: -2374522952319100610
+    second: "N\xFAmero de ind\xEDcios_2"
+  - first:
+      213: 5045745735492049947
+    second: "N\xFAmero de ind\xEDcios_3"
+  - first:
+      213: 6114196535285152505
+    second: "N\xFAmero de ind\xEDcios_4"
+  - first:
+      213: 7151720202766648296
+    second: "N\xFAmero de ind\xEDcios_5"
+  - first:
+      213: -4261322591264632756
+    second: "N\xFAmero de ind\xEDcios_6"
+  - first:
+      213: -2589489432742861262
+    second: "N\xFAmero de ind\xEDcios_7"
+  - first:
+      213: 4106330633880515026
+    second: "N\xFAmero de ind\xEDcios_8"
+  - first:
+      213: 6942607685569879138
+    second: "N\xFAmero de ind\xEDcios_9"
+  - first:
+      213: -2985619357872976347
+    second: "N\xFAmero de ind\xEDcios_10"
+  - first:
+      213: -5120477035970611005
+    second: "N\xFAmero de ind\xEDcios_11"
+  - first:
+      213: 8282544575613257423
+    second: "N\xFAmero de ind\xEDcios_12"
+  - first:
+      213: 6251712604615687463
+    second: "N\xFAmero de ind\xEDcios_13"
+  - first:
+      213: 8952315054118127715
+    second: "N\xFAmero de ind\xEDcios_14"
+  - first:
+      213: 1639797791208995659
+    second: "N\xFAmero de ind\xEDcios_15"
+  - first:
+      213: -8157062481229621948
+    second: "N\xFAmero de ind\xEDcios_16"
+  - first:
+      213: -4860967497377494367
+    second: "N\xFAmero de ind\xEDcios_17"
+  - first:
+      213: -3286308072406979446
+    second: "N\xFAmero de ind\xEDcios_18"
+  - first:
+      213: 715476496149024666
+    second: "N\xFAmero de ind\xEDcios_19"
+  - first:
+      213: 7398514035867306692
+    second: "N\xFAmero de ind\xEDcios_20"
+  - first:
+      213: 7248031173958151735
+    second: "N\xFAmero de ind\xEDcios_21"
+  - first:
+      213: 2925776666071238922
+    second: "N\xFAmero de ind\xEDcios_22"
+  - first:
+      213: 3560310923642962405
+    second: "N\xFAmero de ind\xEDcios_23"
+  - first:
+      213: -6089090368433011061
+    second: "N\xFAmero de ind\xEDcios_24"
+  - first:
+      213: -3035999772413337626
+    second: "N\xFAmero de ind\xEDcios_25"
+  - first:
+      213: -2374324551317525077
+    second: "N\xFAmero de ind\xEDcios_26"
+  - first:
+      213: 5107009864119832712
+    second: "N\xFAmero de ind\xEDcios_27"
+  - first:
+      213: 6931060071633937560
+    second: "N\xFAmero de ind\xEDcios_28"
+  - first:
+      213: -2831005735663203593
+    second: "N\xFAmero de ind\xEDcios_29"
+  - first:
+      213: 8522408736931582265
+    second: "N\xFAmero de ind\xEDcios_30"
+  - first:
+      213: 3434656665396981081
+    second: "N\xFAmero de ind\xEDcios_31"
+  - first:
+      213: -6849260447447750079
+    second: "N\xFAmero de ind\xEDcios_32"
+  - first:
+      213: 5023766040011026667
+    second: "N\xFAmero de ind\xEDcios_33"
+  - first:
+      213: -3814434318785303011
+    second: "N\xFAmero de ind\xEDcios_34"
+  - first:
+      213: 1439791225396345703
+    second: "N\xFAmero de ind\xEDcios_35"
+  - first:
+      213: 3794167130384366498
+    second: "N\xFAmero de ind\xEDcios_36"
+  - first:
+      213: 4640928831470777477
+    second: "N\xFAmero de ind\xEDcios_37"
+  - first:
+      213: -8530615431860445472
+    second: "N\xFAmero de ind\xEDcios_38"
+  - first:
+      213: -52950747052984543
+    second: "N\xFAmero de ind\xEDcios_39"
+  - first:
+      213: -827132456951097866
+    second: "N\xFAmero de ind\xEDcios_40"
+  - first:
+      213: 4954721079092106304
+    second: "N\xFAmero de ind\xEDcios_41"
+  - first:
+      213: -7135335435912763250
+    second: "N\xFAmero de ind\xEDcios_42"
+  - first:
+      213: -6681792838935243070
+    second: "N\xFAmero de ind\xEDcios_43"
+  - first:
+      213: 5207283739407516835
+    second: "N\xFAmero de ind\xEDcios_44"
+  - first:
+      213: 4445781744063932776
+    second: "N\xFAmero de ind\xEDcios_45"
+  - first:
+      213: 648687384224724464
+    second: "N\xFAmero de ind\xEDcios_46"
+  - first:
+      213: -5264233090848434401
+    second: "N\xFAmero de ind\xEDcios_47"
+  - first:
+      213: 2293680219942161942
+    second: "N\xFAmero de ind\xEDcios_48"
+  - first:
+      213: 591737494046903163
+    second: "N\xFAmero de ind\xEDcios_49"
+  - first:
+      213: -1611637193987746337
+    second: "N\xFAmero de ind\xEDcios_50"
+  - first:
+      213: -7628691606319318489
+    second: "N\xFAmero de ind\xEDcios_51"
+  - first:
+      213: 4782842056159117136
+    second: "N\xFAmero de ind\xEDcios_52"
+  - first:
+      213: 2615887892824284968
+    second: "N\xFAmero de ind\xEDcios_53"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_0"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1874
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a58fd5cbc89fb70800000000000000
+      internalID: 8933326076524386856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_1"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1874
+        width: 209
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f294fec4d0468e110800000000000000
+      internalID: 1290391301529749807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_2"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1642
+        width: 205
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e391204a4fffb0fd0800000000000000
+      internalID: -2374522952319100610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_3"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1642
+        width: 209
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c12fe4307160640800000000000000
+      internalID: 5045745735492049947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_4"
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1642
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa789cba5df9d450800000000000000
+      internalID: 6114196535285152505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_5"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1409
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e304ea02a3004360800000000000000
+      internalID: 7151720202766648296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_6"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1409
+        width: 206
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4013524eadbcd4c0800000000000000
+      internalID: -4261322591264632756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_7"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1409
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236ebb3a419401cd0800000000000000
+      internalID: -2589489432742861262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_8"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1409
+        width: 205
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1b0ca84fd9cf830800000000000000
+      internalID: 4106330633880515026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_9"
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1176
+        width: 206
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c1a4118e8195060800000000000000
+      internalID: 6942607685569879138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_10"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1176
+        width: 208
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e83733303f096d0800000000000000
+      internalID: -2985619357872976347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_11"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1176
+        width: 205
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c83d66e34960f8b0800000000000000
+      internalID: -5120477035970611005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_12"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1176
+        width: 206
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc644c1a86281f270800000000000000
+      internalID: 8282544575613257423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_13"
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1176
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d33fbad7b82c650800000000000000
+      internalID: 6251712604615687463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_14"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 943
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368c71e3c130d3c70800000000000000
+      internalID: 8952315054118127715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_15"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 943
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b7b70376bb1c610800000000000000
+      internalID: 1639797791208995659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_16"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 943
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44554ab24ea4cce80800000000000000
+      internalID: -8157062481229621948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_17"
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 942
+        width: 205
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa481ec0df5a8cb0800000000000000
+      internalID: -4860967497377494367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_18"
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 943
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ceea14830b462d0800000000000000
+      internalID: -3286308072406979446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_19"
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 937
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f8a1e1512ede900800000000000000
+      internalID: 715476496149024666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_20"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 709
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cacc9d015dcca660800000000000000
+      internalID: 7398514035867306692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_21"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 709
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eabb473fd269460800000000000000
+      internalID: 7248031173958151735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_22"
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 709
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a098d4950627a9820800000000000000
+      internalID: 2925776666071238922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_23"
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 709
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e18ea5fbe3c86130800000000000000
+      internalID: 3560310923642962405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_24"
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 709
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b864c4042943f7ba0800000000000000
+      internalID: -6089090368433011061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_25"
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 703
+        width: 204
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efd22bda46fdd5d0800000000000000
+      internalID: -3035999772413337626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_26"
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 704
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badea397664bc0fd0800000000000000
+      internalID: -2374324551317525077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_27"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 473
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880574fc96ebfd640800000000000000
+      internalID: 5107009864119832712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_28"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 476
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89462aea962103060800000000000000
+      internalID: 6931060071633937560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_29"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 476
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa83b0684f36b8d0800000000000000
+      internalID: -2831005735663203593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_30"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 476
+        width: 209
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9311e73b79da54670800000000000000
+      internalID: 8522408736931582265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_31"
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 476
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d2a622a0a5aaf20800000000000000
+      internalID: 3434656665396981081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_32"
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 476
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a6eb779e982f0a0800000000000000
+      internalID: -6849260447447750079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_33"
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 476
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be03789a89008b540800000000000000
+      internalID: 5023766040011026667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_34"
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 473
+        width: 205
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e2eb16238601bc0800000000000000
+      internalID: -3814434318785303011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_35"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 250
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b397cbd7a2bf310800000000000000
+      internalID: 1439791225396345703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_36"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 250
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abf50917e697a430800000000000000
+      internalID: 3794167130384366498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_37"
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 250
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5843fabfe24e76040800000000000000
+      internalID: 4640928831470777477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_38"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 250
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee1e7c367a2d9980800000000000000
+      internalID: -8530615431860445472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_39"
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 250
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127b05b7391e34ff0800000000000000
+      internalID: -52950747052984543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_40"
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 250
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5db39a96f6584f0800000000000000
+      internalID: -827132456951097866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_41"
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 250
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044dc68f194b2c440800000000000000
+      internalID: 4954721079092106304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_42"
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 250
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88a925c9323afc90800000000000000
+      internalID: -7135335435912763250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_43"
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 250
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6148c80d08543a0800000000000000
+      internalID: -6681792838935243070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_44"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 22
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a48d0cb8fcf34840800000000000000
+      internalID: 5207283739407516835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_45"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 22
+        width: 209
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869e8d301f692bd30800000000000000
+      internalID: 4445781744063932776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_46"
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 22
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5fdf23db9900900800000000000000
+      internalID: 648687384224724464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_47"
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 22
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f175f1d15efa1f6b0800000000000000
+      internalID: -5264233090848434401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_48"
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 22
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e0ef1f10ac4df10800000000000000
+      internalID: 2293680219942161942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_49"
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 22
+        width: 205
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b02fc9d16463800800000000000000
+      internalID: 591737494046903163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_50"
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 22
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd59d89c28052a9e0800000000000000
+      internalID: -1611637193987746337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_51"
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 21
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a35501761712690800000000000000
+      internalID: -7628691606319318489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_52"
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 21
+        width: 204
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fb92e6281106240800000000000000
+      internalID: 4782842056159117136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "N\xFAmero de ind\xEDcios_53"
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 21
+        width: 206
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f5900dd208d4420800000000000000
+      internalID: 2615887892824284968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

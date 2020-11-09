@@ -31,13 +31,13 @@ public class TinderBarFill : MonoBehaviour
 		}
 			image.fillAmount = Mathf.Lerp(image.fillAmount, rightChoices/unitInfo.Length , 0.2f);
 
-		FinishLevel();
+		//FinishLevel();
 		
     }
 
 	public void FinishLevel()
 	{
-		if (rightChoices / unitInfo.Length * 100 > percentToFinish)
+		if (rightChoices / unitInfo.Length > percentToFinish)
 		{
 			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
 		}

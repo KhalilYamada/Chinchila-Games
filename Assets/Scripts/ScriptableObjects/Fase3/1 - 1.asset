@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 - 1
   m_EditorClassIdentifier: 
   textMain: "A crian\xE7a n\xE3o se concentra quando a sala est\xE1 barulhenta"
-  textCharacterName: Pikachu
+  textCharacterName: "Crian\xE7a"
   textRight: Pedir para o psicopedagogo da escola falar com ela
   textLeft: Repreender ela na frente de todos
-  sprite: {fileID: 21300000, guid: b8b642756615c164e82b0ee7ddd04472, type: 3}
+  sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

@@ -7,7 +7,7 @@ using TMPro;
 
 public class ScreenManager : MonoBehaviour
 {
-	public int screenIndex = 0;
+	public int screenIndex = 1;
 
 	[Header("Total Screens")]
 	public GameObject[] screens;

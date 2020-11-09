@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMain: "A crian\xE7a est\xE1 fazendo prova mas alguns alunos que j\xE1 terminaram
     n\xE3o param de falar"
-  textCharacterName: Meowth
+  textCharacterName: "Crian\xE7a"
   textRight: Repreender os alunos, afinal, eles podem acabar atrapalhando a turma
   textLeft: "N\xE3o fazer nada pois crian\xE7as s\xE3o sempre crian\xE7as"
-  sprite: {fileID: 21300000, guid: d52fdc76b71b28c4188ca299130e6919, type: 3}
+  sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

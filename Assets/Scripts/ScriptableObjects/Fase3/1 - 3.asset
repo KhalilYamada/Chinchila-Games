@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMain: "A turma est\xE1 animada e isso est\xE1 fazendo com que a crian\xE7a
     se distraia f\xE1cil"
-  textCharacterName: Bulbassauro
+  textCharacterName: "Crian\xE7a"
   textRight: "Voc\xEA continua com a aula, afinal a crian\xE7a tamb\xE9m deve se
     adaptar ao mundo"
   textLeft: "Faz de tudo para a sala ficar sempre quieta independente do que aconte\xE7a"
-  sprite: {fileID: 21300000, guid: 5b4ffb5472b05164d8572fa8d3acaaca, type: 3}
+  sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

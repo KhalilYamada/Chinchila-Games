@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMain: "O Jo\xE3o tem faltado muito na minha aula, quais atitudes eu deveria
     tomar?"
-  textCharacterName: Eevee
+  textCharacterName: "Professora de M\xFAsica"
   textRight: "Recomendar que a professora de m\xFAsica fale com o psicopedagogo sobre
     a situa\xE7\xE3o"
   textLeft: "Informar os pais que o aluno tem fugido da aula de m\xFAsica"
-  sprite: {fileID: 21300000, guid: d7a4f8aa725a4fa4893c8d76e5effaea, type: 3}
+  sprite: {fileID: 8827438912671679545, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMain: "Os outros alunos est\xE3o implicando com o Jo\xE3o(Crian\xE7a) por causa
     do fone anti-ruido"
-  textCharacterName: Squirtle
+  textCharacterName: "Crian\xE7a"
   textRight: "Explicar para as crian\xE7as que elas n\xE3o devem fazer isso "
   textLeft: "N\xE3o fazer nada pois isso \xE9 problema dos pais"
-  sprite: {fileID: 21300000, guid: 1d58f57ec93cc8745b05478f313393ba, type: 3}
+  sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

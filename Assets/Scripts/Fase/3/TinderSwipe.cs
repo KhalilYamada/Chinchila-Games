@@ -15,7 +15,7 @@ public class TinderSwipe : MonoBehaviour
 	public GameObject frameRight;
 	private BoxCollider2D boxCollider;
 	[HideInInspector] public TinderUnit unitInfo;
-	private Image image;
+	public Image image;
 	public GameObject positioner;
 
 	private string state;
@@ -44,7 +44,7 @@ public class TinderSwipe : MonoBehaviour
 		originalPosition = transform.position;
 		originalRotation = transform.rotation;
 		boxCollider = GetComponent<BoxCollider2D>();
-		image = GetComponent<Image>();
+		//image = GetComponent<Image>();
 
 		isInverted = (Random.Range(0, 2) == 1);
 

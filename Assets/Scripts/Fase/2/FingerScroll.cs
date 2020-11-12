@@ -43,7 +43,7 @@ public class FingerScroll : MonoBehaviour
 
 			if (targetObject[i].activeSelf)
 			{
-				targetObject[i].transform.localPosition -= new Vector3(0, speed, 0);
+				targetObject[i].transform.position -= new Vector3(0, speed/200, 0);
 			}
 			else
 			{

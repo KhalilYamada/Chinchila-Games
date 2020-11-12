@@ -86,6 +86,12 @@ TextureImporter:
   - first:
       213: -7716377147911951108
     second: Copy of Prancheta 5 (1)_27
+  - first:
+      213: -8914172518297515792
+    second: Copy of Prancheta 5 (1)_28
+  - first:
+      213: 5492049209165343732
+    second: Copy of Prancheta 5 (1)_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -222,9 +228,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1213
-        y: 79
+        y: 1324
         width: 1099
-        height: 4386
+        height: 3141
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -780,6 +786,48 @@ TextureImporter:
       bones: []
       spriteID: cfc24c9fddbe9e490800000000000000
       internalID: -7716377147911951108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Prancheta 5 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 912
+        width: 1105
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8c35ce25f7a4480800000000000000
+      internalID: -8914172518297515792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Copy of Prancheta 5 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 35
+        width: 1110
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbe34958ada73c40800000000000000
+      internalID: 5492049209165343732
       vertices: []
       indices: 
       edges: []

@@ -7,7 +7,7 @@ using TMPro;
 
 public class ScreenManager : MonoBehaviour
 {
-	public int screenIndex = 1;
+	public int screenIndex;
 
 	[Header("Total Screens")]
 	public GameObject[] screens;
@@ -85,7 +85,7 @@ public class ScreenManager : MonoBehaviour
 
 		if (isOnMain)
 		{
-			screens[screenIndex + 1].SetActive(true);
+			screens[screenIndex].SetActive(true);
 			tabs.SetActive(true);
 		}
 		else

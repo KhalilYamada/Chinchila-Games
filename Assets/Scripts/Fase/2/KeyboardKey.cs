@@ -6,14 +6,13 @@ using TMPro;
 
 public class KeyboardKey : MonoBehaviour
 {
-	public TMP_Text text;
 
-
-	private char thisLetter;
+	private Sprite sprite;
 	private ScreenManager screenManager;
+
 	private void Start()
 	{
-		text.text = thisLetter.ToString();
+		GetComponent<Image>().sprite = sprite;
 		GetComponent<Button>().onClick.AddListener(delegate { CustomButton_onClick(); });
 	}
 
@@ -22,12 +21,12 @@ public class KeyboardKey : MonoBehaviour
 
 	void CustomButton_onClick()
 	{
-		screenManager.AddChar(thisLetter.ToString());
+		screenManager.AddChar(sprite);
 	}
 
-	public void SetupKey(char letter, ScreenManager SM)
+	public void SetupKey(Sprite letter, ScreenManager SM)
 	{
-		thisLetter = letter;
+		sprite = letter;
 		screenManager = SM;
 	}
 }

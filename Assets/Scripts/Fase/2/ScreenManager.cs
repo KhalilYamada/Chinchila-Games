@@ -19,9 +19,10 @@ public class ScreenManager : MonoBehaviour
 	private List<Button> buttons = new List<Button>();
 	private List<GameObject> buttonHighlight = new List<GameObject>();
 	[HideInInspector] public List<bool> finishedThisWord = new List<bool>(); //Variável que mostra se cada texto é igual ao texto esperado
-	private List<TMP_Text> texts = new List<TMP_Text>();
-	private int textIndex;
-	private TMP_Text currentText;
+	private List<Image[]> texts = new List<Image[]>();
+	[SerializeField]private int textIndex;
+	private Image[] currentText;
+	public Sprite quadrado;
 
     void Start()
     {
@@ -30,7 +31,7 @@ public class ScreenManager : MonoBehaviour
 
 		for (int i = 0; i < buttonHighlight.Count; i++)
 		{
-			buttonHighlight[i].SetActive(false);
+			//buttonHighlight[i].SetActive(false);
 		}
 		textIndex = 0;
 	}
@@ -48,17 +49,28 @@ public class ScreenManager : MonoBehaviour
 			buttons.Add(buttonsObjects[i].GetComponent<Button>());
 			buttonHighlight.Add(buttonsObjects[i].transform.GetChild(0).GetComponent<Image>().gameObject);
 			finishedThisWord.Add(false);
-			texts.Add(buttonsObjects[i].GetComponentInChildren<TMP_Text>());
+			Image[] tempText = new Image[buttonsObjects[i].transform.childCount];
+			
+			for (int j = 0; j < buttonsObjects[i].transform.childCount; j++)
+			{
+				tempText[j] = buttonsObjects[i].transform.GetChild(j).GetComponent<Image>();
+			}
+			texts.Add(tempText);
 		}
 	}
 
 	private void IgnoreFinishedText()
 	{
 		if (currentText == null) return;
-		if (textIndex >= 0 && currentText.text == wordAnswers[textIndex])
+		string convertedName = "";
+		for (int i = 0; i < currentText.Length - 1; i++)
+		{
+			convertedName += currentText[i].sprite.name;
+		}
+		if (textIndex >= 0 && convertedName == wordAnswers[textIndex])
 		{
 			finishedThisWord[textIndex] = true;
-			buttonHighlight[textIndex].SetActive(false);
+		//	buttonHighlight[textIndex].SetActive(false);
 			textIndex = -1;
 			currentText = null;
 		}
@@ -136,35 +148,64 @@ public class ScreenManager : MonoBehaviour
 		currentText = texts[ind];
 		for (int i = 0; i < buttonHighlight.Count; i++)
 		{
-			buttonHighlight[i].SetActive(false);
+		//	buttonHighlight[i].SetActive(false);
 		}
-
-		if (textIndex >= 0 && currentText.text != wordAnswers[textIndex])
+		string convertedName = "";
+		for (int i = 0; i < currentText.Length - 1; i++)
+		{
+			convertedName += currentText[i].sprite.name;
+		}
+		if (textIndex >= 0 && convertedName != wordAnswers[textIndex])
 		{
 			buttonHighlight[textIndex].SetActive(true);
 		}
 	}
 
-	public void AddChar(string character)
+	public void AddChar(Sprite character)
 	{
 		if (currentText == null) return;
-		if (currentText.text == "")
+		int index = currentText.Length + 1;
+		
+		for (int i = 0; i < currentText.Length; i++)
 		{
-			character = character.ToUpper(); //eu quase fiz isso na mão pq n esperava que fosse~ tão fácil, aushauhsuasuhau
+			if (currentText[i].sprite.name == "Quadrado")
+			{
+				index = i;
+				break;
+			}
 		}
-
-		currentText.text += character;
+		Debug.Log(currentText.Length - 1);
+		Debug.Log(index);
+		if(index <= currentText.Length - 1)
+		{
+			currentText[index].sprite = character;
+		}
 	}
 
 	public void DeleteLastChar()
 	{
 		if (currentText == null) return;
-		currentText.text = currentText.text.Remove(currentText.text.Length - 1);
+		int index = -1;
+		for (int i = currentText.Length - 1; i >= 0; i--)
+		{
+			if (currentText[i].sprite.name != "Quadrado")
+			{
+				index = i;
+				break;
+			}
+		}
+		if (index >= 0)
+		{
+			currentText[index].sprite = quadrado;
+		}
 	}
 
 	public void DeleteEntireWord()
 	{
 		if (currentText == null) return;
-		currentText.text = "";
+		for (int i = 0; i < currentText.Length; i++)
+		{
+			currentText[i].sprite = quadrado;
+		}
 	}
 }

@@ -9,7 +9,7 @@ public class KeyboardManager : MonoBehaviour
 	public GameObject KeyPrefab;
 	public GameObject Keyboard;
 	public List<GameObject> Key = new List<GameObject>();
-	public char[] letters;
+	public Sprite[] letters;
 
 	private ScreenManager screenManager;
 

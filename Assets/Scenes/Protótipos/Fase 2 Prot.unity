@@ -894,7 +894,6 @@ MonoBehaviour:
   - Ae
   - Ae
   finishedThisWord: 000000
-  textIndex: 0
   quadrado: {fileID: -864569133587978196, guid: 3b843c64bc7941541b05b60b99f7a763, type: 3}
 --- !u!114 &178930762
 MonoBehaviour:
@@ -920,6 +919,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d52fdc76b71b28c4188ca299130e6919, type: 3}
   - {fileID: 21300000, guid: b8b642756615c164e82b0ee7ddd04472, type: 3}
   - {fileID: 21300000, guid: a987262079104e54db1670b5152ba5d1, type: 3}
+  isActive: 0
+  speedToMove: 0.5
+  modifiedPosition: {x: 0, y: -70, z: 0}
 --- !u!1 &190139509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: 0, y: -24.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &288867389
@@ -4453,6 +4455,7 @@ GameObject:
   - component: {fileID: 1173387091}
   - component: {fileID: 1173387093}
   - component: {fileID: 1173387092}
+  - component: {fileID: 1173387094}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -4517,6 +4520,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173387090}
   m_CullTransparentMesh: 0
+--- !u!65 &1173387094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173387090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 95.76763, y: 98.91303, z: 27.092709}
+  m_Center: {x: -0.3462558, y: 0.1484913, z: -13.046347}
 --- !u!1 &1182420492
 GameObject:
   m_ObjectHideFlags: 0

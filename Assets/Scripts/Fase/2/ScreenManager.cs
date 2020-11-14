@@ -20,7 +20,7 @@ public class ScreenManager : MonoBehaviour
 	private List<GameObject> buttonHighlight = new List<GameObject>();
 	[HideInInspector] public List<bool> finishedThisWord = new List<bool>(); //Variável que mostra se cada texto é igual ao texto esperado
 	private List<Image[]> texts = new List<Image[]>();
-	[SerializeField]private int textIndex;
+	private int textIndex;
 	private Image[] currentText;
 	public Sprite quadrado;
 
@@ -159,6 +159,8 @@ public class ScreenManager : MonoBehaviour
 		{
 			buttonHighlight[textIndex].SetActive(true);
 		}
+
+		KeyboardManager.instance.isAppearing = true;
 	}
 
 	public void AddChar(Sprite character)

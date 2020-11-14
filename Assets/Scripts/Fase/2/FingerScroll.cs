@@ -56,6 +56,7 @@ public class FingerScroll : MonoBehaviour
 	{
 		oldTouchPosition = Input.mousePosition.y;
 		manualMove = true;
+		KeyboardManager.instance.isAppearing = false;
 	}
 	private void OnMouseDrag()
 	{

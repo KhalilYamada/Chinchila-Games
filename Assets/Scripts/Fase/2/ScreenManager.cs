@@ -165,7 +165,7 @@ public class ScreenManager : MonoBehaviour
 	{
 		if (currentText == null) return;
 		int index = currentText.Length + 1;
-		
+
 		for (int i = 0; i < currentText.Length; i++)
 		{
 			if (currentText[i].sprite.name == "Quadrado")
@@ -174,8 +174,6 @@ public class ScreenManager : MonoBehaviour
 				break;
 			}
 		}
-		Debug.Log(currentText.Length - 1);
-		Debug.Log(index);
 		if(index <= currentText.Length - 1)
 		{
 			currentText[index].sprite = character;

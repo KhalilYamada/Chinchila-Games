@@ -16,4 +16,5 @@ MonoBehaviour:
   textCharacterName: "Crian\xE7a"
   textRight: Pedir para o psicopedagogo da escola falar com ela
   textLeft: Repreender ela na frente de todos
+  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

@@ -18,4 +18,5 @@ MonoBehaviour:
   textRight: "Voc\xEA continua com a aula, afinal a crian\xE7a tamb\xE9m deve se
     adaptar ao mundo"
   textLeft: "Faz de tudo para a sala ficar sempre quieta independente do que aconte\xE7a"
+  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

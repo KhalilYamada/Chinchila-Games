@@ -10,6 +10,8 @@ public class TinderUnit : ScriptableObject
 	public string textRight;
 	public string textLeft;
 
+	public AnimationSprites frameSprites;
+
 	public Sprite sprite;
    
 }

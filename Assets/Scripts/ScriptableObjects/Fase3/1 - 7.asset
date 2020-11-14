@@ -16,4 +16,5 @@ MonoBehaviour:
   textCharacterName: Pais
   textRight: "Recomendar que comprem um fone de ouvido anti ru\xEDdo"
   textLeft: Falar que vai tentar manter a sala quieta
+  frameSprites: {fileID: 11400000, guid: 47a971462c8e2314db1e0ab6a49d9667, type: 2}
   sprite: {fileID: 7958696166725112835, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

@@ -18,4 +18,5 @@ MonoBehaviour:
   textRight: "Recomendar que a professora de m\xFAsica fale com o psicopedagogo sobre
     a situa\xE7\xE3o"
   textLeft: "Informar os pais que o aluno tem fugido da aula de m\xFAsica"
+  frameSprites: {fileID: 11400000, guid: af63de1f03a218e4799e54e5758ee4f7, type: 2}
   sprite: {fileID: 8827438912671679545, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

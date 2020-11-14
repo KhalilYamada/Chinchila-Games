@@ -39,6 +39,9 @@ public class TinderSwipe : MonoBehaviour
 	public bool isInverted;
 	public bool matched;
 
+	private Sprite[] frames;
+	private Sprite startingSprite;
+
 	private void Start()
 	{
 		originalPosition = transform.position;
@@ -48,12 +51,15 @@ public class TinderSwipe : MonoBehaviour
 
 		isInverted = (Random.Range(0, 2) == 1);
 
+		startingSprite = image.sprite;
 		textLeft.text = isInverted ? unitInfo.textRight : unitInfo.textLeft;
 		textRight.text = isInverted ? unitInfo.textLeft : unitInfo.textRight;
 		image.sprite = unitInfo.sprite;
 		goingLeft = false;
 		goingRight = false;
 		manualMove = false;
+		frames = unitInfo.frameSprites.frame;
+		animFrameCount = 0;
 	}
 	private void Update()
 	{
@@ -83,6 +89,29 @@ public class TinderSwipe : MonoBehaviour
 
 		positioner.transform.position = originalPosition;
 		positioner.transform.rotation = Quaternion.identity;
+
+		if (boxCollider.enabled)
+		{
+			Animation();
+		}
+		else
+		{
+			image.sprite = startingSprite;
+		}
+	}
+
+	private int animFrameCount;
+	private void Animation()
+	{
+		image.sprite = frames[animFrameCount];
+		if (animFrameCount >= frames.Length - 1)
+		{
+			animFrameCount = 0;
+		}
+		else
+		{
+			animFrameCount++;
+		}
 	}
 
 	#region Input Management

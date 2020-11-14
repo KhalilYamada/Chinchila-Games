@@ -29,7 +29,7 @@ public class TinderBarFill : MonoBehaviour
 				rightChoices++;
 			}
 		}
-			image.fillAmount = Mathf.Lerp(image.fillAmount, rightChoices/unitInfo.Length , 0.2f);
+			image.fillAmount = Mathf.Lerp(image.fillAmount, rightChoices/unitInfo.Length , 0.15f);
 
 		//FinishLevel();
 		

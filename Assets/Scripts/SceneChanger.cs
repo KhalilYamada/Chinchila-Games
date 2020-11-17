@@ -8,8 +8,11 @@ public class SceneChanger : MonoBehaviour
 {
 
     public GameObject []objetos;
-    public int []alpha;
-    public Animator[] Animators;
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
     public void Cena1()
     {

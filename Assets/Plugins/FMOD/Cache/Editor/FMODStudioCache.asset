@@ -1,5 +1,74 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9202571120676785848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BotaoVoltar
+  m_EditorClassIdentifier: 
+  Path: event:/BotaoVoltar
+  guid: 3324e3a8b2d36e448e3d3591175a471b
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8837452054399536087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicaFase1
+  m_EditorClassIdentifier: 
+  Path: event:/MusicaFase1
+  guid: 7b5b5093d5f20e419bf64b5bd559ef64
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4609419241851013038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/M\xFAsicaMenu1"
+  m_EditorClassIdentifier: 
+  Path: "event:/M\xFAsicaMenu1"
+  guid: 5e94ffe28c856a41a98b6159e0292d50
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2641985403882958373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +84,7 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637410735634636687
+  lastModified: 637411737782803875
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -34,14 +103,91 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 3466985358209483485}
   - {fileID: -2641985403882958373}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: -4609419241851013038}
+  - {fileID: 8619904727605764331}
+  - {fileID: 2915187793135507016}
+  - {fileID: 8326642236515558821}
+  - {fileID: 1617800005621266758}
+  - {fileID: 2087327941381521940}
+  - {fileID: -8837452054399536087}
+  - {fileID: 6861944625374590408}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2641985403882958373}
   StringsBanks:
   - {fileID: 3466985358209483485}
-  stringsBankWriteTime: 637410735635404693
+  stringsBankWriteTime: 637411737782883650
   cacheVersion: 6
+--- !u!114 &1617800005621266758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BotaoPause
+  m_EditorClassIdentifier: 
+  Path: event:/BotaoPause
+  guid: ce4529d261c71846ab881f3b7755295d
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2087327941381521940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicaFase3
+  m_EditorClassIdentifier: 
+  Path: event:/MusicaFase3
+  guid: 777974a7d09f9a48ae6a17db9b054f6b
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2915187793135507016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BotaoSelecao
+  m_EditorClassIdentifier: 
+  Path: event:/BotaoSelecao
+  guid: fbb9a62049be9544b95fb4a9796ef0c7
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3466985358209483485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,9 +203,101 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637410735635404693
+  lastModified: 637411737782883650
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 700
+    Value: 1064
   Exists: 1
+--- !u!114 &3919718273203186813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BotaoPause
+  m_EditorClassIdentifier: 
+  Path: event:/BotaoPause
+  guid: ce4529d261c71846ab881f3b7755295d
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6861944625374590408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicaFase2
+  m_EditorClassIdentifier: 
+  Path: event:/MusicaFase2
+  guid: 9a9a631a052a2440a77d5b66b104a4c8
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8326642236515558821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BotaoVoltar
+  m_EditorClassIdentifier: 
+  Path: event:/BotaoVoltar
+  guid: 3324e3a8b2d36e448e3d3591175a471b
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8619904727605764331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ToqueParaJogar
+  m_EditorClassIdentifier: 
+  Path: event:/ToqueParaJogar
+  guid: d54fc40b0290314e9bcbb78d9dc946b1
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0

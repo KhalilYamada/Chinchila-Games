@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 6
   m_EditorClassIdentifier: 
-  textMain: "Meu filho est\xE1 tendo um desempenho baixo nas aulas de m\xFAsica,
-    o que voc\xEA me diz sobre isso?"
-  textCharacterName: Pais
-  textRight: "Recomendar que levem a crian\xE7a no psic\xF3logo"
-  textLeft: Dizer que eles devem conversar com ele quando chegarem em casa
+  textMain: "\u201CMeu filho me disse que as outras crian\xE7as t\xEAm implicado
+    com ele por causa do fone anti-ruido, acho que isso n\xE3o foi uma boa ideia\u201D"
+  textCharacterName: "M\xE3e do Thiago: Ver\xF4nica"
+  textRight: "Explicar para a Ver\xF4nica a import\xE2ncia da utiliza\xE7\xE3o do
+    fone e dizer que vai afastar ele dessas crian\xE7as"
+  textLeft: "Pedir para ele evitar usar o fone de ouvido nos momentos que n\xE3o
+    s\xE3o necess\xE1rios"
   frameSprites: {fileID: 11400000, guid: 9d1ca37ea42c47a4da42c4b982af9448, type: 2}
   sprite: {fileID: 5316594832770754760, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

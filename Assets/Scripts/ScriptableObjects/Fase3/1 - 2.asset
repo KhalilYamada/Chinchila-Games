@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 2
   m_EditorClassIdentifier: 
-  textMain: "Recomendo que os pais comprem um fone de ouvido anti-ru\xEDdo"
-  textCharacterName: "Psicopedagogo M\xE1rio"
-  textRight: Pedir para conversar com os pais do aluno
-  textLeft: "N\xE3o fazer nada por medo do aluno sofrer bullying"
-  frameSprites: {fileID: 11400000, guid: 77211fbec0cdf7247ac040d9e1dedc4c, type: 2}
+  textMain: "Thiago parece aflito com o resto da sala conversando. Ele tampa os ouvidos
+    e parece estar distra\xEDdo"
+  textCharacterName: 'Aluno: Thiago'
+  textRight: "Falar com o psicopedagogo M\xE1rio o que est\xE1 acontecendo"
+  textLeft: "Repreend\xEA-lo na frente da sala, pois ele est\xE1 fazendo um comportamento
+    muito mal educado"
+  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
   sprite: {fileID: 6450005796919116881, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

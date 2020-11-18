@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 5
   m_EditorClassIdentifier: 
-  textMain: "O Jo\xE3o tem faltado muito na minha aula, quais atitudes eu deveria
-    tomar?"
-  textCharacterName: "Professora de M\xFAsica"
-  textRight: "Recomendar que a professora de m\xFAsica fale com o psicopedagogo sobre
-    a situa\xE7\xE3o"
-  textLeft: "Informar os pais que o aluno tem fugido da aula de m\xFAsica"
-  frameSprites: {fileID: 11400000, guid: af63de1f03a218e4799e54e5758ee4f7, type: 2}
+  textMain: "Voc\xEA deu uma atividade em grupo com papel colorido para a turma.
+    As crian\xE7as come\xE7am a fazer um burburinho aceit\xE1vel em pequenas rodas
+    de conversa, mas Thiago parece estar irritado com todos minimos os sons"
+  textCharacterName: 'Aluno: Thiago'
+  textRight: "Continuar com a aula normalmente, mas prestando aten\xE7\xE3o em como
+    o Thiago est\xE1"
+  textLeft: "Repreender a sala para que fique em sil\xEAncio e n\xE3o incomode o
+    coleguinha"
+  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
   sprite: {fileID: 8827438912671679545, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

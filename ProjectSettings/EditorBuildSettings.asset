@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/Prot\xF3tipos/Fase 1 Prot.unity"
-    guid: 1a85f0d459bf37a4aa67282703979604
-  - enabled: 1
     path: "Assets/Scenes/Prot\xF3tipos/Menu.unity"
     guid: b4974795822ec57488abcede28a98cae
+  - enabled: 1
+    path: "Assets/Scenes/Prot\xF3tipos/Fase 1 Prot.unity"
+    guid: 1a85f0d459bf37a4aa67282703979604
   - enabled: 1
     path: "Assets/Scenes/Prot\xF3tipos/Fase 2 Prot.unity"
     guid: 1edc40c20387189449a0e6169cda797b
@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TesteKhalil.unity
     guid: 198a6c677bf05ce4dabf5104168cb04c
-  - enabled: 1
-    path: "Assets/Scenes/Prot\xF3tipos/TesteAudio.unity"
-    guid: fa9ec306670652d469cfbc969e750d38
   m_configObjects: {}

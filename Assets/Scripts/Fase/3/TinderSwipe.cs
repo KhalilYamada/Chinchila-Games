@@ -129,8 +129,10 @@ public class TinderSwipe : MonoBehaviour
 	private void OnMouseDrag()
 	{
 		speed = oldTouchPosition - Input.mousePosition.x;
-		transform.localPosition -= new Vector3(speed, -Mathf.Clamp(transform.position.x, -1, 1) * speed / 10, 0);
-		transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles + new Vector3(0, 0, speed/90));
+		float deccelForMovement = Mathf.Sign(speed) == Mathf.Sign(transform.localPosition.x) ? 1 : Mathf.Lerp(1,0, Mathf.Abs(transform.localPosition.x/100));
+		transform.localPosition -= new Vector3(speed * deccelForMovement, -Mathf.Clamp(transform.position.x, -1, 1) * speed / 10, 0);
+		transform.localPosition = new Vector2(transform.localPosition.x, Mathf.Clamp(transform.localPosition.y, -1, 1));
+		transform.localRotation = Quaternion.Euler(transform.localRotation.eulerAngles + new Vector3(0, 0, speed * deccelForMovement/60));
 		oldTouchPosition = Input.mousePosition.x;
 		if (transform.position.x > 0)
 		{

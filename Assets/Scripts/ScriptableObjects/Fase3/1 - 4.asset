@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 4
   m_EditorClassIdentifier: 
-  textMain: "Os outros alunos est\xE3o implicando com o Jo\xE3o(Crian\xE7a) por causa
-    do fone anti-ruido"
-  textCharacterName: "Crian\xE7a"
-  textRight: "Explicar para as crian\xE7as que elas n\xE3o devem fazer isso "
-  textLeft: "N\xE3o fazer nada pois isso \xE9 problema dos pais"
-  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
+  textMain: "Aquele Thiago do 1\xBAC \xE9 um pouco estranho, c\xEA n\xE3o acha?"
+  textCharacterName: "Prof.M\xFAsica: Adriana"
+  textRight: "\u201CAdri, o Thiago \xE9 complicado\u201D (Explicar porqu\xEA ele
+    \xE9 estranho)"
+  textLeft: "\u201CAi Adri...Voc\xEA n\xE3o pode falar assim dele\u2026\u201D (Repreender
+    a fala da professora)"
+  frameSprites: {fileID: 11400000, guid: af63de1f03a218e4799e54e5758ee4f7, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

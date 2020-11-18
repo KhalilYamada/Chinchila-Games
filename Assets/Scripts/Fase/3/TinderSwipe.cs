@@ -16,6 +16,7 @@ public class TinderSwipe : MonoBehaviour
 	private BoxCollider2D boxCollider;
 	[HideInInspector] public TinderUnit unitInfo;
 	public Image image;
+	public GameObject blockingImage;
 	public GameObject positioner;
 
 	private string state;
@@ -93,11 +94,13 @@ public class TinderSwipe : MonoBehaviour
 		if (boxCollider.enabled)
 		{
 			Animation();
+			image.SetNativeSize();
 		}
 		else
 		{
 			image.sprite = startingSprite;
 		}
+		blockingImage.SetActive(!boxCollider.enabled);
 	}
 
 	private int animFrameCount;

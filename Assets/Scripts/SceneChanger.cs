@@ -8,6 +8,12 @@ public class SceneChanger : MonoBehaviour
 {
 
     public GameObject []objetos;
+    public GameObject []apagarEVoltar;
+
+    public void Update()
+    {
+            IsConfigActive();
+    }
 
     public void Menu()
     {
@@ -46,7 +52,7 @@ public class SceneChanger : MonoBehaviour
     }
 
 
-    public void VoltaMenu()
+    /*public void VoltaMenu()
     {
         Invoke("VoltarMenu", 1);
     }
@@ -55,6 +61,29 @@ public class SceneChanger : MonoBehaviour
         if (objetos[0].activeInHierarchy == true)
         objetos[2].GetComponent<Image>().color = new Color(255, 255, 255, 1f);
         objetos[3].GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+    }*/
+
+    public void IsConfigActive()
+    {
+        if (objetos[4].activeInHierarchy == true)
+        {
+            foreach (GameObject gameObject in apagarEVoltar)
+            {
+                for (int i = 0; i < apagarEVoltar.Length; i++)
+                {
+                    apagarEVoltar[i].GetComponent<Button>().enabled = false;
+                }
+            }
+            Time.timeScale = 0;
+        }
+        else
+        {
+            for (int i = 0; i < apagarEVoltar.Length; i++)
+            {
+                apagarEVoltar[i].GetComponent<Button>().enabled = true;
+            }
+            Time.timeScale = 1;
+        }
     }
 }
 

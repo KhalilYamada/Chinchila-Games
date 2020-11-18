@@ -11,14 +11,12 @@ public class FmodSound : MonoBehaviour
     float EfeitosVolume;
     public GameObject[] sliders;
 
-    void Awake()
+    void Start()
     {
         Musicas = FMODUnity.RuntimeManager.GetBus("bus:/Mestre/Musicas");
         Efeitos = FMODUnity.RuntimeManager.GetBus("bus:/Mestre/Efeitos");
         sliders[0].GetComponent<Slider>().value = PlayerPrefs.GetFloat("volumeMusica");
         sliders[1].GetComponent<Slider>().value = PlayerPrefs.GetFloat("volumeEfeitos");
-        //MusicVolume = PlayerPrefs.GetFloat("volumeMusica");
-        //EfeitosVolume = PlayerPrefs.GetFloat("volumeEfeitos");
     }
 
     void Update()

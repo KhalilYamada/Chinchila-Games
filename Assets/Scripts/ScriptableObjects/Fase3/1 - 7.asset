@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 7
   m_EditorClassIdentifier: 
-  textMain: "Meu filho tem dito que a sala de aula \xE9 muito barulhenta"
-  textCharacterName: Pais
-  textRight: "Recomendar que comprem um fone de ouvido anti ru\xEDdo"
-  textLeft: Falar que vai tentar manter a sala quieta
+  textMain: "\u201CMeu filho est\xE1 tendo um desempenho baixo nas aulas de m\xFAsica,
+    o que voc\xEA tem a me dizer sobre isso?\u201D"
+  textCharacterName: 'Pai do Thiago: Ricardo'
+  textRight: "\u201CEnt\xE3o pai, o Thiago \xE9 inteligente mas n\xE3o gosta de sons
+    muito altos, nosso psicopedagogo sugeriu uma visita no psic\xF3logo\u201D"
+  textLeft: "\u201CPreciso que o senhor converse com ele em casa para que possamos
+    resolver esse problema juntos\u201D"
   frameSprites: {fileID: 11400000, guid: 47a971462c8e2314db1e0ab6a49d9667, type: 2}
   sprite: {fileID: 7958696166725112835, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

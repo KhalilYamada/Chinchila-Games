@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 3
   m_EditorClassIdentifier: 
-  textMain: "A turma est\xE1 animada e isso est\xE1 fazendo com que a crian\xE7a
-    se distraia f\xE1cil"
-  textCharacterName: "Crian\xE7a"
-  textRight: "Voc\xEA continua com a aula, afinal a crian\xE7a tamb\xE9m deve se
-    adaptar ao mundo"
-  textLeft: "Faz de tudo para a sala ficar sempre quieta independente do que aconte\xE7a"
-  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
+  textMain: "Ap\xF3s conversas com o aluno Thiago, concluo que, se porventura, a
+    senhora puder recomendar aos seus pais um fone de ouvido anti-ru\xEDdo, seria
+    deveras adequado"
+  textCharacterName: "Psicopedagogo: M\xE1rio"
+  textRight: "\u201COs outros alunos v\xE3o estranhar\u2026 mas posso tentar falar
+    com os pais dele\u201D"
+  textLeft: "\u201CAcho melhor n\xE3o, pois os outros alunos v\xE3o achar que \xE9
+    certo usar eletr\xF4nicos durante a aula desse jeito...\u201D"
+  frameSprites: {fileID: 11400000, guid: 9e5beb0a43fe5ed4d8aec0c4cdb6775a, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

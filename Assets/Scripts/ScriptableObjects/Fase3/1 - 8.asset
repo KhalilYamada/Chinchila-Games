@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 8
   m_EditorClassIdentifier: 
-  textMain: "A crian\xE7a est\xE1 fazendo prova mas alguns alunos que j\xE1 terminaram
-    n\xE3o param de falar"
-  textCharacterName: "Crian\xE7a"
-  textRight: Repreender os alunos, afinal, eles podem acabar atrapalhando a turma
-  textLeft: "N\xE3o fazer nada pois crian\xE7as s\xE3o sempre crian\xE7as"
-  frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
+  textMain: "O diretor Amadeu est\xE1 te cobrando uma atitude em rela\xE7\xE3o \xE0s
+    faltas do Thiago"
+  textCharacterName: 'Diretor: Amadeu'
+  textRight: Conversar com os pais para que invistam em um atendente terapeuta para
+    o filho
+  textLeft: "Tentar negociar com o Thiago dizendo que, se ele n\xE3o for \xE0s aulas,
+    ela n\xE3o poder\xE1 participar do intervalo"
+  frameSprites: {fileID: 11400000, guid: 77211fbec0cdf7247ac040d9e1dedc4c, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

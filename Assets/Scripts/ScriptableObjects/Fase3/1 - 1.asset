@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8045d804bd03320468aed3cb89fcf233, type: 3}
   m_Name: 1 - 1
   m_EditorClassIdentifier: 
-  textMain: "A crian\xE7a n\xE3o se concentra quando a sala est\xE1 barulhenta"
-  textCharacterName: "Crian\xE7a"
-  textRight: Pedir para o psicopedagogo da escola falar com ela
-  textLeft: Repreender ela na frente de todos
+  textMain: "Thiago est\xE1 balan\xE7ando a caneta na frente dos olhos distra\xEDdo"
+  textCharacterName: 'Aluno: Thiago'
+  textRight: "Tentar chamar a aten\xE7\xE3o dele para a aula"
+  textLeft: Pedir para ele guardar a caneta
   frameSprites: {fileID: 11400000, guid: c570ae70bd74bf24d89d2b5929806d1f, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

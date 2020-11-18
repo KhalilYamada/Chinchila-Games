@@ -61,7 +61,7 @@ public class TinderSwipe : MonoBehaviour
 		frames = unitInfo.frameSprites.frame;
 		animFrameCount = 0;
 	}
-	private void Update()
+	private void FixedUpdate()
 	{
 		frameLeft.transform.localPosition = Vector3.Lerp(frameLeft.transform.localPosition, new Vector3(goingLeft ? 0 : 150, frameLeft.transform.localPosition.y, frameLeft.transform.localPosition.z), 0.2f);
 		frameRight.transform.localPosition = Vector3.Lerp(frameRight.transform.localPosition, new Vector3(goingRight ? 0 : -150, frameRight.transform.localPosition.y, frameRight.transform.localPosition.z), 0.2f);
@@ -101,17 +101,19 @@ public class TinderSwipe : MonoBehaviour
 	}
 
 	private int animFrameCount;
+	private float floatFrameCount;
 	private void Animation()
 	{
 		image.sprite = frames[animFrameCount];
 		if (animFrameCount >= frames.Length - 1)
 		{
-			animFrameCount = 0;
+			floatFrameCount = 0;
 		}
 		else
 		{
-			animFrameCount++;
+			floatFrameCount += Time.deltaTime;
 		}
+		animFrameCount = (int)(floatFrameCount * 24);
 	}
 
 	#region Input Management

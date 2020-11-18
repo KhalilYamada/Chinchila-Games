@@ -43,7 +43,9 @@ public class LinksFound : MonoBehaviour
 	public void MoreLinks(GameObject gameobject)
 	{
 		linksAmount++;
-		Destroy(gameobject);
+		Image image = gameobject.GetComponent<Image>();
+		image.color = new Color(image.color.r, image.color.g, image.color.b, 0.5f);
+		gameobject.GetComponent<Button>().enabled = false;
 	}
 
 	private void CheckIfFinished()

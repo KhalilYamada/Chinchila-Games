@@ -6,13 +6,15 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
-
-    public GameObject []objetos;
-    public GameObject []apagarEVoltar;
+    public GameObject telaInicial;
+    public GameObject []menus;
+    public GameObject []apagarEVoltarBotoes;
+    public GameObject []apagarEVoltarColliders;
 
     public void Update()
     {
-            IsConfigActive();
+        DeactivateButtons();
+        DeactivateColliders();
     }
 
     public void Menu()
@@ -48,41 +50,53 @@ public class SceneChanger : MonoBehaviour
 
     public void DelayMenu()
     {
-        objetos[0].SetActive(false);
+        telaInicial.SetActive(false);
     }
 
-
-    /*public void VoltaMenu()
+    public void DeactivateButtons()
     {
-        Invoke("VoltarMenu", 1);
-    }
-    public void VoltarMenu()
-    {
-        if (objetos[0].activeInHierarchy == true)
-        objetos[2].GetComponent<Image>().color = new Color(255, 255, 255, 1f);
-        objetos[3].GetComponent<Image>().color = new Color(255, 255, 255, 1f);
-    }*/
-
-    public void IsConfigActive()
-    {
-        if (objetos[4].activeInHierarchy == true)
-        {
-            foreach (GameObject gameObject in apagarEVoltar)
+            for (int i = 0; i < menus.Length; i++)
             {
-                for (int i = 0; i < apagarEVoltar.Length; i++)
+                if (menus[i].activeInHierarchy == true)
                 {
-                    apagarEVoltar[i].GetComponent<Button>().enabled = false;
+                        for (int e = 0; e < apagarEVoltarBotoes.Length; e++)
+                        {
+                            apagarEVoltarBotoes[e].GetComponent<Button>().enabled = false;
+                        }
+                    Time.timeScale = 0;
+                break;
+                }
+                else
+                {
+                    for (int e = 0; e < apagarEVoltarBotoes.Length; e++)
+                    {
+                        apagarEVoltarBotoes[e].GetComponent<Button>().enabled = true;
+                    }
+                    Time.timeScale = 1;
                 }
             }
-            Time.timeScale = 0;
-        }
-        else
+    }
+    public void DeactivateColliders()
+    {
+        for (int i = 0; i < menus.Length; i++)
         {
-            for (int i = 0; i < apagarEVoltar.Length; i++)
+            if (menus[i].activeInHierarchy == true)
             {
-                apagarEVoltar[i].GetComponent<Button>().enabled = true;
+                for (int e = 0; e < apagarEVoltarColliders.Length; e++)
+                {
+                    apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = false;
+                }
+                Time.timeScale = 0;
+                break;
             }
-            Time.timeScale = 1;
+            else
+            {
+                for (int e = 0; e < apagarEVoltarColliders.Length; e++)
+                {
+                    apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = true;
+                }
+                Time.timeScale = 1;
+            }
         }
     }
 }

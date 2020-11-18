@@ -16,6 +16,9 @@ public class MoveStudentFiles : MonoBehaviour
 	private float firstAngle;
 	private RectTransform rectTransform;
 
+	private static bool theresAnActive;
+	private bool manualMove;
+
 	private void Start()
 	{
 		rectTransform = GetComponent<RectTransform>();
@@ -53,19 +56,20 @@ public class MoveStudentFiles : MonoBehaviour
 
 			//Colocar na escala
 			float currentTouchDistance = Vector3.Distance(Input.GetTouch(0).position, secondTouch.position);
-			float currentScale = Mathf.Clamp(currentTouchDistance / firstScale, minScale, maxScale);
-			transform.localScale = new Vector2(currentScale, currentScale);
+			float currentScale = currentTouchDistance - firstScale;
+			transform.localScale += new Vector3(currentScale, currentScale);
+			transform.localScale = new Vector3(Mathf.Clamp(transform.localScale.x, minScale, maxScale), Mathf.Clamp(transform.localScale.x, minScale, maxScale), 1);
 
+			firstScale = currentScale;
 			//colocar no ângulo
 			float angle  = Mathf.Atan2(secondTouch.position.y - Input.GetTouch(0).position.y, secondTouch.position.x - Input.GetTouch(0).position.x) * 180 / Mathf.PI;
-			rectTransform.rotation = Quaternion.Euler(0,0, angle - firstAngle);
+			rectTransform.Rotate(0,0, angle - firstAngle);
 
-
+			firstAngle = angle;
 			oldSecondTouchPosition = Camera.main.ScreenToWorldPoint(secondTouch.position);
 		}
 	}
-	private static bool theresAnActive;
-	private bool manualMove;
+	
 	private void OnMouseUp()
 	{
 		DeactivateBoolWithDelay();

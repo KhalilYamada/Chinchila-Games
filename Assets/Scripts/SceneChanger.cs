@@ -42,6 +42,10 @@ public class SceneChanger : MonoBehaviour
     public void Quit()
     {
         Debug.Log("Saiu");
+        PlayerPrefs.DeleteKey("Cena 0");
+        PlayerPrefs.DeleteKey("Cena 1");
+        PlayerPrefs.DeleteKey("Cena 2");
+        PlayerPrefs.DeleteKey("Cena 3");
         Application.Quit();
     }
 

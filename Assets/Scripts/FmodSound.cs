@@ -92,7 +92,6 @@ public class FmodSound : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("musicMuted") == 1)
         {
-            Debug.Log("aloooo");
             PlayerPrefs.SetFloat("volumeMusica", musicVolume + 0.2f);
         }
     }

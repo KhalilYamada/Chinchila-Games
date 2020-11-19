@@ -14,7 +14,7 @@ public class Saves : MonoBehaviour
 
     void PassouCena1()
     {
-        if(PlayerPrefs.GetInt("Finished " + SceneManager.GetSceneByName("Fase 1 Prot"),1) == 1)
+        if(PlayerPrefs.GetInt("Finished Fase 1 Prot",1) == 1)
         {
             bloaqueadores[0].SetActive(false);
         }
@@ -22,7 +22,7 @@ public class Saves : MonoBehaviour
 
     void PassouCena2()
     {
-        if (PlayerPrefs.GetInt("Finished " + SceneManager.GetSceneByName("Fase 2 Prot"), 1) == 1)
+        if (PlayerPrefs.GetInt("Finished Fase 2 Prot", 1) == 1)
         {
             bloaqueadores[1].SetActive(false);
         }

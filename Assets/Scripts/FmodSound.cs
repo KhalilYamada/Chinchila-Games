@@ -7,11 +7,13 @@ public class FmodSound : MonoBehaviour
 {
     FMOD.Studio.Bus Musicas;
     FMOD.Studio.Bus Efeitos;
-    float MusicVolume;
-    float EfeitosVolume;
+    float musicVolume;
+    float efeitosVolume;
     public GameObject[] sliders;
     public GameObject[] soundMute;
     public GameObject menuConfig;
+    public GameObject menuDicas;
+    public GameObject menuPistas;
 
     void Start()
     {
@@ -28,18 +30,19 @@ public class FmodSound : MonoBehaviour
         Musicas.setVolume(PlayerPrefs.GetFloat("volumeMusica"));
         Efeitos.setVolume(PlayerPrefs.GetFloat("volumeEfeitos"));
         Mute();
+        print(PlayerPrefs.GetInt("musicMuted"));
     }
 
     public void MusicVolumeLevel(float newMusicVolume)
     {
-        MusicVolume = newMusicVolume;
+        musicVolume = newMusicVolume;
         PlayerPrefs.SetFloat("volumeMusica", newMusicVolume);
         PlayerPrefs.SetInt("musicMuted", 1);
     }
 
     public void EfeitosVolumeLevel(float newEfeitosVolume)
     {
-        EfeitosVolume = newEfeitosVolume;
+        efeitosVolume = newEfeitosVolume;
         PlayerPrefs.SetFloat("volumeEfeitos", newEfeitosVolume);
         PlayerPrefs.SetInt("efeitosMuted", 1);
 
@@ -51,7 +54,7 @@ public class FmodSound : MonoBehaviour
         {
             if (soundMute[0].activeInHierarchy)
             {
-                MusicVolume = 0f;
+                musicVolume = 0f;
                 PlayerPrefs.SetFloat("volumeMusica", 0f);
                 PlayerPrefs.SetInt("musicMuted", 0);
                 sliders[0].GetComponent<Slider>().enabled = false;
@@ -65,7 +68,7 @@ public class FmodSound : MonoBehaviour
 
             if (soundMute[1].activeInHierarchy)
             {
-                EfeitosVolume = 0f;
+                efeitosVolume = 0f;
                 PlayerPrefs.SetFloat("volumeEfeitos", 0f);
                 PlayerPrefs.SetInt("efeitosMuted", 0);
                 sliders[1].GetComponent<Slider>().enabled = false;
@@ -76,6 +79,21 @@ public class FmodSound : MonoBehaviour
                 PlayerPrefs.SetFloat("volumeEfeitos", sliders[1].GetComponent<Slider>().value);
                 sliders[1].GetComponent<Slider>().enabled = true;
             }
+        }
+        if(menuDicas.activeInHierarchy || menuPistas.activeInHierarchy)
+        {
+            if (PlayerPrefs.GetInt("musicMuted") == 1)
+            {
+                PlayerPrefs.SetFloat("volumeMusica", musicVolume - 0.2f);
+            }
+        }
+    }
+    public void FecharMenuPistas()
+    {
+        if (PlayerPrefs.GetInt("musicMuted") == 1)
+        {
+            Debug.Log("aloooo");
+            PlayerPrefs.SetFloat("volumeMusica", musicVolume + 0.2f);
         }
     }
 }

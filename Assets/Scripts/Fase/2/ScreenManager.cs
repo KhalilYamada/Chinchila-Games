@@ -16,6 +16,7 @@ public class ScreenManager : MonoBehaviour
 	[Header("Text Objects")]
 	public GameObject[] buttonsObjects;
 	public string[] wordAnswers;
+	public string[] decoyLetters;
 	private List<Button> buttons = new List<Button>();
 	private List<GameObject> buttonHighlight = new List<GameObject>();
 	[HideInInspector] public List<bool> finishedThisWord = new List<bool>(); //Variável que mostra se cada texto é igual ao texto esperado
@@ -63,10 +64,11 @@ public class ScreenManager : MonoBehaviour
 	{
 		if (currentText == null) return;
 		string convertedName = "";
-		for (int i = 0; i < currentText.Length - 1; i++)
+		for (int i = 0; i < currentText.Length; i++)
 		{
 			convertedName += currentText[i].sprite.name;
 		}
+		Debug.Log(convertedName);
 		if (textIndex >= 0 && convertedName == wordAnswers[textIndex])
 		{
 			finishedThisWord[textIndex] = true;
@@ -76,12 +78,20 @@ public class ScreenManager : MonoBehaviour
 		}
 	}
 
+	public GameObject[] textsToAppear;
 	private void FinishedWords()
 	{
+		
+
 		if (!finishedThisWord.Contains(false))
 		{
 			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
 			SceneManager.LoadScene("Menu");
+		}
+		textsToAppear[1].SetActive(true);
+		for (int i = 0; i < finishedThisWord.Count; i++)
+		{
+			textsToAppear[i + 1].SetActive(finishedThisWord[i]);
 		}
 
 	}
@@ -159,7 +169,7 @@ public class ScreenManager : MonoBehaviour
 		{
 			buttonHighlight[textIndex].SetActive(true);
 		}
-
+		
 		KeyboardManager.instance.isAppearing = true;
 	}
 

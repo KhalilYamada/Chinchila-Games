@@ -7528,6 +7528,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1232547770}
+        m_TargetAssemblyTypeName: FmodSound, Assembly-CSharp
+        m_MethodName: FecharMenuPistas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1001920090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9824,6 +9836,8 @@ MonoBehaviour:
   - {fileID: 2121746348}
   - {fileID: 1404758876}
   menuConfig: {fileID: 1081194961}
+  menuDicas: {fileID: 1059355866}
+  menuPistas: {fileID: 1021184880}
 --- !u!4 &1232547771
 Transform:
   m_ObjectHideFlags: 0
@@ -12247,6 +12261,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1232547770}
+        m_TargetAssemblyTypeName: FmodSound, Assembly-CSharp
+        m_MethodName: FecharMenuPistas
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

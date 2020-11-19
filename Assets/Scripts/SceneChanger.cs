@@ -10,11 +10,13 @@ public class SceneChanger : MonoBehaviour
     public GameObject []menus;
     public GameObject []apagarEVoltarBotoes;
     public GameObject []apagarEVoltarColliders;
+    public GameObject[] apagarEVoltarObjects;
 
     public void Update()
     {
         DeactivateButtons();
         DeactivateColliders();
+        DeactivateObjects();
     }
 
     public void Menu()
@@ -94,6 +96,30 @@ public class SceneChanger : MonoBehaviour
                 for (int e = 0; e < apagarEVoltarColliders.Length; e++)
                 {
                     apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = true;
+                }
+                Time.timeScale = 1;
+            }
+        }
+    }
+
+    public void DeactivateObjects()
+    {
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (menus[i].activeInHierarchy == true)
+            {
+                for (int e = 0; e < apagarEVoltarObjects.Length; e++)
+                {
+                    apagarEVoltarObjects[e].SetActive(false);
+                }
+                Time.timeScale = 0;
+                break;
+            }
+            else
+            {
+                for (int e = 0; e < apagarEVoltarObjects.Length; e++)
+                {
+                    apagarEVoltarObjects[e].SetActive(true);
                 }
                 Time.timeScale = 1;
             }

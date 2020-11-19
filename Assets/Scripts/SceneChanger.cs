@@ -42,6 +42,10 @@ public class SceneChanger : MonoBehaviour
     public void Quit()
     {
         Debug.Log("Saiu");
+        PlayerPrefs.DeleteKey("Cena 0");
+        PlayerPrefs.DeleteKey("Cena 1");
+        PlayerPrefs.DeleteKey("Cena 2");
+        PlayerPrefs.DeleteKey("Cena 3");
         Application.Quit();
     }
 
@@ -78,7 +82,7 @@ public class SceneChanger : MonoBehaviour
                         {
                             apagarEVoltarBotoes[e].GetComponent<Button>().enabled = false;
                         }
-                    Time.timeScale = 0;
+                    //Time.timeScale = 0;
                 break;
                 }
                 else
@@ -87,7 +91,7 @@ public class SceneChanger : MonoBehaviour
                     {
                         apagarEVoltarBotoes[e].GetComponent<Button>().enabled = true;
                     }
-                    Time.timeScale = 1;
+                    //Time.timeScale = 1;
                 }
             }
     }
@@ -101,7 +105,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = false;
                 }
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
                 break;
             }
             else
@@ -110,7 +114,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = true;
                 }
-                Time.timeScale = 1;
+                //Time.timeScale = 1;
             }
         }
     }
@@ -125,7 +129,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarObjects[e].SetActive(false);
                 }
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
                 break;
             }
             else
@@ -134,7 +138,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarObjects[e].SetActive(true);
                 }
-                Time.timeScale = 1;
+                //Time.timeScale = 1;
             }
         }
     }

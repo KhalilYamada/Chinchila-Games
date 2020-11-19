@@ -13,11 +13,15 @@ public class TinderManager : MonoBehaviour
 	public TinderBarFill barFill;
 
 	public static int index;
+    public static int indexChanged;
+
+    public GameObject[] soundEffect;
 
 
 	private void Start()
 	{
 		index = 0;
+        indexChanged = index;
 		barFill.unitInfo = new TinderSwipe[unitInfo.Length];
 
 
@@ -49,5 +53,20 @@ public class TinderManager : MonoBehaviour
 			bottomText.text = "";
 			barFill.FinishLevel();
 		}
+
+        Sound();
 	}
+
+    public void Sound()
+    {
+        if (index == 1) soundEffect[0].SetActive(true);
+        if (index == 2) soundEffect[1].SetActive(true); 
+        if (index == 3) soundEffect[2].SetActive(true); 
+        if (index == 4) soundEffect[3].SetActive(true); 
+        if (index == 5) soundEffect[4].SetActive(true); 
+        if (index == 6) soundEffect[5].SetActive(true); 
+        if (index == 7) soundEffect[6].SetActive(true);  
+        if (index == 8) soundEffect[7].SetActive(true); 
+
+    }
 }

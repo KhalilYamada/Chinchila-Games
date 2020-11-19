@@ -92,6 +92,98 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6861818569335297125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/ConfirmacaoSwipe
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/ConfirmacaoSwipe
+  guid: c54f8e5dc0b9f7499f1b3bd96225ee60
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5923814105864372538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/SomSairSelecao
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/SomSairSelecao
+  guid: d507406148a1ad4a929bebb23c4d56e3
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5667797688870075760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/BotaoPista
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/BotaoPista
+  guid: 32616a96ffffe841b38e9632a26bfacb
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5405901068782208144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/SomSelecaoDocumento
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/SomSelecaoDocumento
+  guid: 799c8744b94f5744b2553fa49afcc4cb
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-4609419241851013038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +222,7 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637413943661004829
+  lastModified: 637414117294809898
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -171,6 +263,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Musicas/MusicaFase1
   guid: 7b5b5093d5f20e419bf64b5bd559ef64
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-824230120393654207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/Direita
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/Direita
+  guid: 7f2aa1de46949b4d8fcb583b1a3aac25
   Banks:
   - {fileID: -2641985403882958373}
   IsStream: 0
@@ -251,12 +366,19 @@ MonoBehaviour:
   - {fileID: -2296185817451846133}
   - {fileID: -8534900463986648950}
   - {fileID: -7560325582000315510}
+  - {fileID: -5667797688870075760}
+  - {fileID: 2051703719436619399}
+  - {fileID: -5405901068782208144}
+  - {fileID: -5923814105864372538}
+  - {fileID: 5810166714551815560}
+  - {fileID: -824230120393654207}
+  - {fileID: -6861818569335297125}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2641985403882958373}
   StringsBanks:
   - {fileID: 3466985358209483485}
-  stringsBankWriteTime: 637413943661952085
+  stringsBankWriteTime: 637414117294909700
   cacheVersion: 6
 --- !u!114 &637455929912595778
 MonoBehaviour:
@@ -295,6 +417,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BotaoPause
   guid: ce4529d261c71846ab881f3b7755295d
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2051703719436619399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/AcertarErro
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/AcertarErro
+  guid: 8726a468df95f140a439809e25e7c354
   Banks:
   - {fileID: -2641985403882958373}
   IsStream: 0
@@ -388,11 +533,11 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637413943661952085
+  lastModified: 637414117294909700
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1236
+    Value: 1562
   Exists: 1
 --- !u!114 &3919718273203186813
 MonoBehaviour:
@@ -408,6 +553,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BotaoPause
   guid: ce4529d261c71846ab881f3b7755295d
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5810166714551815560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/Esquerda
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/Esquerda
+  guid: 0e2e6bd223da024ca7740682a7816ece
   Banks:
   - {fileID: -2641985403882958373}
   IsStream: 0

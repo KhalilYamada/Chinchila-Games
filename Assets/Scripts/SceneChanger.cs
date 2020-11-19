@@ -45,6 +45,7 @@ public class SceneChanger : MonoBehaviour
         Application.Quit();
     }
 
+
     public void Delay()
     {
         Invoke("DelayMenu", 1);

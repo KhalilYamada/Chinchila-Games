@@ -18,7 +18,7 @@ public class LinksFound : MonoBehaviour
     {
 		thisImage = GetComponent<Image>();
 
-		usefulSprites = new Sprite[totalLinks];
+		usefulSprites = new Sprite[totalLinks+1];
 		int index = 0;
 		for (int i = 0; i < totalLinks; i++)
 		{

@@ -9820,6 +9820,10 @@ MonoBehaviour:
   sliders:
   - {fileID: 592567965}
   - {fileID: 734295728}
+  soundMute:
+  - {fileID: 2121746348}
+  - {fileID: 1404758876}
+  menuConfig: {fileID: 1081194961}
 --- !u!4 &1232547771
 Transform:
   m_ObjectHideFlags: 0

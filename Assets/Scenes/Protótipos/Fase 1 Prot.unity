@@ -5087,6 +5087,10 @@ MonoBehaviour:
   sliders:
   - {fileID: 518030969}
   - {fileID: 1852631772}
+  soundMute:
+  - {fileID: 398299999}
+  - {fileID: 1359735291}
+  menuConfig: {fileID: 1801206145}
 --- !u!4 &994619387
 Transform:
   m_ObjectHideFlags: 0
@@ -5126,6 +5130,7 @@ MonoBehaviour:
   - {fileID: 549636361}
   - {fileID: 495626535}
   - {fileID: 917970731}
+  apagarEVoltarObjects: []
 --- !u!1 &997339771
 GameObject:
   m_ObjectHideFlags: 0

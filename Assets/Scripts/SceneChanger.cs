@@ -78,7 +78,7 @@ public class SceneChanger : MonoBehaviour
                         {
                             apagarEVoltarBotoes[e].GetComponent<Button>().enabled = false;
                         }
-                    Time.timeScale = 0;
+                    //Time.timeScale = 0;
                 break;
                 }
                 else
@@ -87,7 +87,7 @@ public class SceneChanger : MonoBehaviour
                     {
                         apagarEVoltarBotoes[e].GetComponent<Button>().enabled = true;
                     }
-                    Time.timeScale = 1;
+                    //Time.timeScale = 1;
                 }
             }
     }
@@ -101,7 +101,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = false;
                 }
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
                 break;
             }
             else
@@ -110,7 +110,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarColliders[e].GetComponent<BoxCollider>().enabled = true;
                 }
-                Time.timeScale = 1;
+                //Time.timeScale = 1;
             }
         }
     }
@@ -125,7 +125,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarObjects[e].SetActive(false);
                 }
-                Time.timeScale = 0;
+                //Time.timeScale = 0;
                 break;
             }
             else
@@ -134,7 +134,7 @@ public class SceneChanger : MonoBehaviour
                 {
                     apagarEVoltarObjects[e].SetActive(true);
                 }
-                Time.timeScale = 1;
+                //Time.timeScale = 1;
             }
         }
     }

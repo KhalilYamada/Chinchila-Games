@@ -30,7 +30,6 @@ public class FmodSound : MonoBehaviour
         Musicas.setVolume(PlayerPrefs.GetFloat("volumeMusica"));
         Efeitos.setVolume(PlayerPrefs.GetFloat("volumeEfeitos"));
         Mute();
-        print(PlayerPrefs.GetInt("musicMuted"));
     }
 
     public void MusicVolumeLevel(float newMusicVolume)

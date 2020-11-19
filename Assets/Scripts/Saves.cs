@@ -6,25 +6,33 @@ using UnityEngine.SceneManagement;
 public class Saves : MonoBehaviour
 {
     public GameObject[] bloaqueadores;
+    public GameObject[] medalhas;
 
     public void Start()
     {
         PlayerPrefs.SetInt("Dicas", 0);
     }
 
-    void PassouCena1()
+    private void Update()
     {
-        if(PlayerPrefs.GetInt("Finished Fase 1 Prot",1) == 1)
-        {
-            bloaqueadores[0].SetActive(false);
-        }
+        PassouCena();
     }
 
-    void PassouCena2()
+    void PassouCena()
     {
-        if (PlayerPrefs.GetInt("Finished Fase 2 Prot", 1) == 1)
+        if(PlayerPrefs.GetInt("Finished Fase 1 Prot") == 1)
+        {
+            bloaqueadores[0].SetActive(false);
+            medalhas[0].SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("Finished Fase 2 Prot") == 1)
         {
             bloaqueadores[1].SetActive(false);
+            medalhas[1].SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("Finished Fase 3 Prot") == 1)
+        {
+            medalhas[2].SetActive(true);
         }
     }
 

@@ -54,11 +54,13 @@ public class FmodSound : MonoBehaviour
                 MusicVolume = 0f;
                 PlayerPrefs.SetFloat("volumeMusica", 0f);
                 PlayerPrefs.SetInt("musicMuted", 0);
+                sliders[0].GetComponent<Slider>().enabled = false;
             }
             else
             {
                 PlayerPrefs.SetFloat("volumeMusica", sliders[0].GetComponent<Slider>().value);
                 PlayerPrefs.SetInt("musicMuted", 1);
+                sliders[0].GetComponent<Slider>().enabled = true;
             }
 
             if (soundMute[1].activeInHierarchy)
@@ -66,11 +68,13 @@ public class FmodSound : MonoBehaviour
                 EfeitosVolume = 0f;
                 PlayerPrefs.SetFloat("volumeEfeitos", 0f);
                 PlayerPrefs.SetInt("efeitosMuted", 0);
+                sliders[1].GetComponent<Slider>().enabled = false;
             }
             else
             {
                 PlayerPrefs.SetInt("efeitosMuted", 1);
                 PlayerPrefs.SetFloat("volumeEfeitos", sliders[1].GetComponent<Slider>().value);
+                sliders[1].GetComponent<Slider>().enabled = true;
             }
         }
     }

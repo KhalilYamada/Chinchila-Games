@@ -56,6 +56,18 @@ public class SceneChanger : MonoBehaviour
         telaInicial.SetActive(false);
     }
 
+    public void DoYouHaveClues()
+    {
+        if(PlayerPrefs.GetInt("Dicas") == 0)
+        {
+            menus[2].SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("Dicas") != 0)
+        {
+            menus[3].SetActive(true);
+        }
+    }
+
     public void DeactivateButtons()
     {
             for (int i = 0; i < menus.Length; i++)

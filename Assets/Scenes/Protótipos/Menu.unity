@@ -8673,6 +8673,9 @@ MonoBehaviour:
   telaInicial: {fileID: 109779976}
   menus:
   - {fileID: 853754477}
+  - {fileID: 853754477}
+  - {fileID: 853754477}
+  - {fileID: 853754477}
   apagarEVoltarBotoes:
   - {fileID: 2118436483}
   - {fileID: 861111096}

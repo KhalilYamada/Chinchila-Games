@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 public class Saves : MonoBehaviour
 {
     public GameObject[] bloaqueadores;
+
+    public void Start()
+    {
+        PlayerPrefs.SetInt("Dicas", 0);
+    }
+
     void PassouCena1()
     {
         if(PlayerPrefs.GetInt("Finished " + SceneManager.GetSceneByName("Fase 1 Prot"),1) == 1)

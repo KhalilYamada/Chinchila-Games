@@ -96,6 +96,7 @@ public class ScreenManager : MonoBehaviour
 			{
 				if (finishedThisWord[i-1] == true)
 				{
+                    Debug.Log("fodase");
 					PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
 					SceneManager.LoadScene("Menu");
 				}

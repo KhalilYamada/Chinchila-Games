@@ -245,7 +245,7 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637414158008012558
+  lastModified: 637414178167006495
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
   - {fileID: -2641985403882958373}
   StringsBanks:
   - {fileID: 3466985358209483485}
-  stringsBankWriteTime: 637414158008122262
+  stringsBankWriteTime: 637414178167146114
   cacheVersion: 6
 --- !u!114 &637455929912595778
 MonoBehaviour:
@@ -630,7 +630,7 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637414158008122262
+  lastModified: 637414178167146114
   LoadResult: 0
   FileSizes:
   - Name: Desktop

@@ -68,7 +68,6 @@ public class ScreenManager : MonoBehaviour
 		{
 			convertedName += currentText[i].sprite.name;
 		}
-		Debug.Log(convertedName);
 		if (textIndex >= 0 && convertedName == wordAnswers[textIndex])
 		{
 			finishedThisWord[textIndex] = true;

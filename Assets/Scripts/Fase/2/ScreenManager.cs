@@ -39,6 +39,11 @@ public class ScreenManager : MonoBehaviour
 	
     void Update()
     {
+		if (!finishedThisWord.Contains(false))
+		{
+			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
+			SceneManager.LoadScene("Menu");
+		}
 		IgnoreFinishedText();
 		FinishedWords();
     }

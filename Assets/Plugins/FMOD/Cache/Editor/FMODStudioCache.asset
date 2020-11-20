@@ -115,6 +115,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6763095399472378635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/Errado
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/Errado
+  guid: 4c2f06b79aca2d4a86ed542a16cd5639
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5923814105864372538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +245,7 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637414117294809898
+  lastModified: 637414158008012558
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -373,12 +396,17 @@ MonoBehaviour:
   - {fileID: 5810166714551815560}
   - {fileID: -824230120393654207}
   - {fileID: -6861818569335297125}
+  - {fileID: 1553542375801056448}
+  - {fileID: 8018619855322497410}
+  - {fileID: 1506674612623219338}
+  - {fileID: -6763095399472378635}
+  - {fileID: 2486375617937160524}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2641985403882958373}
   StringsBanks:
   - {fileID: 3466985358209483485}
-  stringsBankWriteTime: 637414117294909700
+  stringsBankWriteTime: 637414158008122262
   cacheVersion: 6
 --- !u!114 &637455929912595778
 MonoBehaviour:
@@ -394,6 +422,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Musicas/MusicaFase2
   guid: 9a9a631a052a2440a77d5b66b104a4c8
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1506674612623219338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/ClicarPalavra
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/ClicarPalavra
+  guid: 31e21fb6ecd9414ab57924b2b2a1a233
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1553542375801056448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/PassarGuia
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/PassarGuia
+  guid: 19c413d35bbabc4ab886c0d713663a5b
   Banks:
   - {fileID: -2641985403882958373}
   IsStream: 0
@@ -472,6 +546,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2486375617937160524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/Correto
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/Correto
+  guid: de7cea140f26894db93a5af41ae3fd2b
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2522041452830211409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,11 +630,11 @@ MonoBehaviour:
   Path: "../../../OneDrive/Documentos/FMOD Studio/\xD1taodiferente/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637414117294909700
+  lastModified: 637414158008122262
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1562
+    Value: 1804
   Exists: 1
 --- !u!114 &3919718273203186813
 MonoBehaviour:
@@ -622,6 +719,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Efeitos/SimOuNaoPista
   guid: 26a298a9f4f5b942b78a988ac673aa51
+  Banks:
+  - {fileID: -2641985403882958373}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8018619855322497410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Efeitos/Teclado
+  m_EditorClassIdentifier: 
+  Path: event:/Efeitos/Teclado
+  guid: 250437ad4b60364eb436b5664f739185
   Banks:
   - {fileID: -2641985403882958373}
   IsStream: 0

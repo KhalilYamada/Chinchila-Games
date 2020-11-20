@@ -21,8 +21,6 @@ public class FmodSound : MonoBehaviour
         Efeitos = FMODUnity.RuntimeManager.GetBus("bus:/Mestre/Efeitos");
         sliders[0].GetComponent<Slider>().value = PlayerPrefs.GetFloat("volumeMusica");
         sliders[1].GetComponent<Slider>().value = PlayerPrefs.GetFloat("volumeEfeitos");
-        if (PlayerPrefs.GetInt("musicMuted", 1) == 0) soundMute[0].SetActive(true);
-        if (PlayerPrefs.GetInt("efeitosMuted", 1) == 0) soundMute[1].SetActive(true);
     }
 
     void Update()
@@ -49,8 +47,10 @@ public class FmodSound : MonoBehaviour
 
     public void Mute()
     {
-        if (menuConfig.activeInHierarchy)
-        {
+        if (menuConfig.activeInHierarchy) { 
+            //if (PlayerPrefs.GetInt("musicMuted", 1) == 0) soundMute[0].SetActive(true);
+            //if (PlayerPrefs.GetInt("efeitosMuted", 1) == 0) soundMute[1].SetActive(true);
+        
             if (soundMute[0].activeInHierarchy)
             {
                 musicVolume = 0f;

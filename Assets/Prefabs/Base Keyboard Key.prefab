@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8084982367062774923}
   - component: {fileID: 8084982367062774922}
   - component: {fileID: 7537864225417845369}
+  - component: {fileID: 3156623183295679847}
   m_Layer: 5
   m_Name: Base Keyboard Key
   m_TagString: Untagged
@@ -119,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8084982367062774923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3156623183295679847}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7537864225417845369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,3 +145,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d3e22bdaab5dc4584121534695217d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3156623183295679847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084982367062774920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Efeitos/Teclado
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

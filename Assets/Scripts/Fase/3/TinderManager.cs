@@ -49,7 +49,7 @@ public class TinderManager : MonoBehaviour
 		}
 		else
 		{
-			topText.text = "fim da fase";
+			topText.text = "";
 			bottomText.text = "";
 			barFill.FinishLevel();
 		}

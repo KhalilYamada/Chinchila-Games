@@ -446,7 +446,7 @@ MonoBehaviour:
   image: {fileID: 1034635624955368493}
   blockingImage: {fileID: 8009657472679946968}
   positioner: {fileID: 520590275096122014}
-  limitFingerSpeed: 50
+  limitFingerSpeed: 30
   thisIndex: 0
   isInverted: 0
   matched: 0

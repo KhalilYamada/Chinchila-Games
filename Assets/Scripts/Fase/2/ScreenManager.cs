@@ -39,11 +39,6 @@ public class ScreenManager : MonoBehaviour
 	
     void Update()
     {
-		if (!finishedThisWord.Contains(false))
-		{
-			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
-			SceneManager.LoadScene("Menu");
-		}
 		IgnoreFinishedText();
 		FinishedWords();
     }
@@ -97,7 +92,18 @@ public class ScreenManager : MonoBehaviour
 		for (int i = 0; i < finishedThisWord.Count; i++)
 		{
 			Debug.Log(finishedThisWord[i]);
-			textsToAppear[i + 1].SetActive(finishedThisWord[i]);
+			if (i == finishedThisWord.Count - 1)
+			{
+				if (finishedThisWord[i] == true)
+				{
+					PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
+					SceneManager.LoadScene("Menu");
+				}
+			}
+			else
+			{
+				textsToAppear[i + 1].SetActive(finishedThisWord[i]);
+			}
 		}
 
 	}

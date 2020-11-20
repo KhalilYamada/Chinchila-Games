@@ -94,7 +94,7 @@ public class ScreenManager : MonoBehaviour
 			Debug.Log(finishedThisWord[i]);
 			if (i == finishedThisWord.Count - 1)
 			{
-				if (finishedThisWord[i] == true)
+				if (finishedThisWord[i-1] == true)
 				{
 					PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
 					SceneManager.LoadScene("Menu");

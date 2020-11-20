@@ -615,7 +615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71063035}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
@@ -1985,6 +1985,7 @@ MonoBehaviour:
   - {fileID: 101456552}
   - {fileID: 1197503204}
   - {fileID: 1611156318}
+  - {fileID: 80168281}
   wordAnswers:
   - espectro
   - hipersensibilidade
@@ -14137,7 +14138,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.49299622, y: -12.982424}
+  m_Offset: {x: 0.49299622, y: -43.53631}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14148,7 +14149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100.2088, y: 117.891754}
+  m_Size: {x: 100.2088, y: 178.9995}
   m_EdgeRadius: 0
 --- !u!50 &1707954620
 Rigidbody2D:

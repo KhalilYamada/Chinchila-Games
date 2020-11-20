@@ -87,9 +87,11 @@ public class ScreenManager : MonoBehaviour
 			PlayerPrefs.SetInt("Finished " + SceneManager.GetActiveScene().name, 1);
 			SceneManager.LoadScene("Menu");
 		}
+		
 		textsToAppear[1].SetActive(true);
 		for (int i = 0; i < finishedThisWord.Count; i++)
 		{
+			Debug.Log(finishedThisWord[i]);
 			textsToAppear[i + 1].SetActive(finishedThisWord[i]);
 		}
 

@@ -19,5 +19,6 @@ MonoBehaviour:
     fone e dizer que vai afastar ele dessas crian\xE7as"
   textLeft: "Pedir para ele evitar usar o fone de ouvido nos momentos que n\xE3o
     s\xE3o necess\xE1rios"
+  imagePosition: {x: 0, y: -50.7, z: 0}
   frameSprites: {fileID: 11400000, guid: 9d1ca37ea42c47a4da42c4b982af9448, type: 2}
   sprite: {fileID: 5316594832770754760, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}

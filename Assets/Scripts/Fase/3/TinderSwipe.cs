@@ -16,6 +16,7 @@ public class TinderSwipe : MonoBehaviour
 	private BoxCollider2D boxCollider;
 	[HideInInspector] public TinderUnit unitInfo;
 	public Image image;
+	private Vector3 imagePosition;
 	public GameObject blockingImage;
 	public GameObject positioner;
 
@@ -60,6 +61,8 @@ public class TinderSwipe : MonoBehaviour
 		goingRight = false;
 		manualMove = false;
 		frames = unitInfo.frameSprites.frame;
+		imagePosition = unitInfo.imagePosition;
+		image.gameObject.transform.localPosition = imagePosition;
 		animFrameCount = 0;
 	}
 	private void FixedUpdate()

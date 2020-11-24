@@ -19,5 +19,6 @@ MonoBehaviour:
     o filho
   textLeft: "Tentar negociar com o Thiago dizendo que, se ele n\xE3o for \xE0s aulas,
     ela n\xE3o poder\xE1 participar do intervalo"
+  imagePosition: {x: 0, y: -81.8, z: 0}
   frameSprites: {fileID: 11400000, guid: 77211fbec0cdf7247ac040d9e1dedc4c, type: 2}
   sprite: {fileID: -6732918984554973925, guid: 50cf02d17b2c3b64096add44b5f63ece, type: 3}
